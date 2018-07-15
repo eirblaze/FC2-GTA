@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="<%template_language>">
+<!--
+
+■ テンプレートについて ■
+
+ダウンロードありがとうございます！ デザイン作者の "HiRo" です。
+テンプレートについて簡単なご説明を書いておきますが、このメッセージは邪魔だったら消して下さい。
+
+当ブログで配布しているテンプレートは、 すべて SEO対策 （検索エンジン最適化） を意識して、
+デザインの段階で内部要素対策を構築しています。 どうぞ安心してお使い下さい。
+
+また、このテンプレートは出来る限りの 「ソース最短化＆最適化」 もしてあります。
+今までカスタマイズをした事が無い方でも、比較的容易にカスタマイズをする事が出来ます。
+
+このデザインは2012年現在の 「平均画面解像度」 を考慮して作成しています。
+詳しくは私のブログに書いておきますので、ぜひ一度見に来て下さいね。
+
+　　　　　【サブカルシート】 by HiRo 「http://subculsheets.blog.fc2.com/」
+
+ -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="<%template_charset>">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="<%author_name>">
+  <meta property="fb:app_id" content="290292324472569">
+  <meta name="keywords" content="grand theft auto san andreas, GTASA, blog, FC2, CLEO, MOD" />
+
+  <!--index_area-->
+  <title><%blog_name> - トップページ</title>
+  <meta name="description" content="<%introduction>">
+  <link rel="canonical" href="<%url>">
+  <!--/index_area-->
+
+  <!--permanent_area-->
+  <title><%sub_title> - <!--topentry--><%topentry_category><!--/topentry--></title>
+  <meta name="description" content="<!--topentry--><%topentry_description><!--/topentry-->">
+  <link rel="canonical" href="<%url>blog-entry-<%pno>.html">
+  <!--/permanent_area-->
+
+  <!--date_area-->
+  <title><%now_year>年<%now_month>月の記事 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <link rel="canonical" href="<%url>blog-date-<%now_year><%now_month>.html">
+  <!--/date_area-->
+
+  <!--category_area-->
+  <title><%sub_title> - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <link rel="canonical" href="<%url>blog-category-<%cno>.html">
+  <!--/category_area-->
+
+  <!--search_area-->
+  <meta name="robots" content="noindex, nofollow">
+  <title>「<%sub_title>」の検索結果 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <!--/search_area-->
+
+  <!--tag_area-->
+  <title>ユーザータグ「<%sub_title>」が設定された記事 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <link rel="canonical" href="<%url>?tag=<%sub_title>">
+  <!--/tag_area-->
+
+  <!--titlelist_area-->
+  <meta name="description" content="全記事タイトルリスト - <%introduction>">
+  <title>全記事タイトルリスト - <%blog_name></title>
+  <link rel="canonical" href="<%url>archives.html">
+  <!--/titlelist_area-->
+
+  <!--edit_area-->
+  <meta name="robots" content="noindex, nofollow">
+  <title>コメントの編集 no.<%eno> - <%blog_name></title>
+  <!--/edit_area-->
+
+  <!--not_index_area--><!--not_category_area--><!--not_date_area--><!--not_search_area--><!--not_tag_area--><!--not_permanent_area--><!--not_titlelist_area--><!--page_area-->
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="<%url>">
+  <title><%blog_name> - <%current_page_num>ページ目<%cno></title>
+  <!--/page_area--><!--/not_titlelist_area--><!--/not_permanent_area--><!--/not_tag_area--><!--/not_search_area--><!--/not_date_area--><!--/not_category_area--><!--/not_index_area-->
+
+  <link rel="stylesheet" href="<%css_link>" media="all">
+  <link rel="stylesheet" href="BLUENOIR-Drei-R.css" media="all">
+  <link rel="alternate" type="application/rss+xml" href="<%url>?xml" title="RSS" />
+
+
+  <!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">google.load("jquery", "1.3");</script>
+
+  <script type="text/javascript" src="https://blog-imgs-43.fc2.com/s/u/b/subculsheets/function.js"></script>
+  <script type="text/javascript" src="https://blog-imgs-43.fc2.com/s/u/b/subculsheets/n-top.js"></script>
+
+  <script type="text/javascript" src="https://blog-imgs-43.fc2.com/s/u/b/subculsheets/open.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://blog-imgs-43.fc2.com/s/u/b/subculsheets/page.js" charset="utf-8"></script>
+
+ <!-- ▼ ページナビ ▼ -->
+<!--index_area-->
+  <script type="text/javascript" src="https://blog-imgs-119.fc2.com/e/i/r/eirblaze/page_nav.js"></script>
+  <script type="text/javascript"><!--
+  prevpageurl = '<!--prevpage--><%prevpage_url><!--/prevpage-->';
+  nextpageurl = '<!--nextpage--><%nextpage_url><!--/nextpage-->';
+  n = '<%total_pages>';
+  //--></script>
+<!--/index_area-->
+
+  <!--prevpage--><link rel="prev" href="<%prevpage_url>" title="<%template_prevpage>" /><!--/prevpage-->
+  <!--nextpage--><link rel="next" href="<%nextpage_url>" title="<%template_nextpage>" /><!--/nextpage-->
+  <!--preventry--><link rel="next" href="<%preventry_url>" title="<%preventry_title>" /><!--/preventry-->
+  <!--nextentry--><link rel="prev" href="<%nextentry_url>" title="<%nextentry_title>" /><!--/nextentry-->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <!--[if lte IE 9.0]>
+  <script type="text/javascript" src="https://blog-imgs-119.fc2.com/e/i/r/eirblaze/css3-mediaqueries.js"></script>
+  <script type="text/javascript" src="https://blog-imgs-119.fc2.com/e/i/r/eirblaze/flexibility.js"></script>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body class="fade">
+
+<!-- ▼　ヘッダー ▼ -->
+<header>
+  <div id="ad"></div>
+  <div id="headerimg" class="headerimg outline">
+    <!-- ▼　トップ画像を変更して、あなたのブログにオリジナリティーを出してみましょう ▼ -->
+
+    <!--img src="https://blog-imgs-106.fc2.com/e/i/r/eirblaze/title70.jpg" alt="" / -->
+
+    <!-- ▲　画像の推奨サイズは "1230→1244px×200px" となっております。 横幅だけでも合わせておきましょう ▲ -->
+
+    <div id="header">
+      <a href="<%url>">
+      <h1><!-- img src="https://blog-imgs-54.fc2.com/e/i/r/eirblaze/f98033dc2.jpg" alt="QR" --><%blog_name></h1>
+        <!--index_area--><p><%introduction></p><!--/index_area-->
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ▼　メニュー ▼ -->
+<nav id="menu">
+   <ul class="clearfix outline">
+
+      <!-- ▼　リンクとタイトルを変更してオリジナルメニューを作ってみましょう ▼ -->
+
+      <li><a href="<%url>"><i class="fas fa-home"></i>
+       <span class="linkname">TOP</span></a></li>
+      <li><a href="http://sdrv.ms/U6qnC8" target="_blank"><i class="fas fa-cloud-download-alt"></i>
+       <span class="linkname">MOD Download</span></a></li>
+      <li><a href="<%url>?xml" target="_blank"><i class="fas fa-rss-square"></i>
+       <span class="linkname">RSS</span></a></li>
+      <li><a href="http://b.hatena.ne.jp/entry/<%url>" class="hatena-bookmark-button" data-hatena-bookmark-title="<%blog_name>" data-hatena-bookmark-layout="simple"><i class="fas fa-bookmark"></i>
+       <span class="linkname">Bookmark</span></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+      <li><a href="<%url>archives.html"><i class="fas fa-book"></i>
+       <span class="linkname">ALL Entry</span></a></li>
+      <li id="last"><a href="<%server_url>control.php" target="_blank"><i class="fas fa-key"></i>
+       <span class="linkname">blog LOGIN</span></a></li>
+
+      <!-- ▲ 変更する場所は、一番上で言う <%url>　と TOP の部分です ▲ -->
+
+   </ul>
+</nav>
+
+<div id="blog-box" class="clearfix outline"><!-- ブログ開始 ----------------------------------------------------------------------------->
+
+<main id="main-box"><!-- メインボックス開始 -->
+  <article>
+
+  <!--not_titlelist_area-->
+  <!--not_search_area-->
+  <!--topentry-->
+
+  <!-- ▼　エントリー開始 ▼ -->
+
+  <section class="main-section">
+
+    <header>
+
+      <!-- ▼　記事タイトル ▼ -->
+      <!--not_permanent_area-->
+      <div class="entry-title">
+        <a href="<%topentry_link>">
+          <h2 id="a<%topentry_no>" class="entry-title-h">
+            <%topentry_title>
+          </h2>
+        </a>
+      </div>
+      <!--/not_permanent_area-->
+
+      <!--permanent_area-->
+      <div class="entry-title">
+        <h2 id="a<%topentry_no>" class="entry-title entry-title-h">
+          <%topentry_title>
+        </h2>
+      </div>
+      <!--/permanent_area-->
+
+       <!-- ▼　カテゴリー ▼ -->
+       <div class="pageinfo-category">
+        <a href="<%topentry_category_link>">[<%topentry_category>]</a>
+       </div>
+
+     </header>
+
+     <!-- ▼　エントリー本文 ▼ -->
+     <div class="entry-body">
+     <%topentry_body>
+
+     <!-- ▼　追記 ▼ -->
+     <!--more_link-->
+     <div class="clearfix">
+     <div class="open-more"><a href="<%topentry_link>" target="_blank">● 別タブで記事を開く ●</a></div>
+     <div id="varP<%topentry_no>" class="read-more"><a href="<%topentry_link>#<%topentry_no>" onclick="showMore(<%topentry_no>,'<%topentry_link>#<%topentry_no>');return false;">▼ 続きを読む ▼</a></div>
+     </div>
+     <div id="varXYZ<%topentry_no>" style="display:none;padding-top: 15px;"><%topentry_more></div>
+     <!--/more_link-->
+
+     <!--more-->
+     <%topentry_more>
+     <!--/more-->
+
+     <footer>
+
+        <!--permanent_area-->
+
+        <!--▼アイキャッチ画像付関連記事・開始▼-->
+        <!--relate_list_area-->
+        <aside>
+          <dl id="fc2relate_entry_thumbnail_area" class="relate_dl fc2relate_entry_thumbnail_on">
+            <dt class="relate_dt">関連記事</dt>
+            <dd class="relate_dd">
+
+              <ul class="relate_ul">
+                <!--relate_list-->
+                <!--relate_entry_other-->
+                <li class="relate_li">
+                  <!-- a href="<%topentry_relate_url>"><img src="<%topentry_relate_thumbnail>"></a -->
+                  <a href="<%topentry_relate_url>"><%topentry_relate_title></a>
+                </li>
+                <!--/relate_entry_other-->
+                <!--/relate_list-->
+              </ul>
+
+          </dd>
+          </dl>
+        </aside>
+        <!--/relate_list_area-->
+        <!--▲アイキャッチ画像付関連記事・終了▲-->
+
+        <!--/permanent_area-->
+
+        <!-- ▼ メタデータ ▼ -->
+        <p class="entry-footer">Entry ⇒ <time datetime="<%topentry_year>-<%topentry_month>-<%topentry_day>"><%topentry_year>.<%topentry_month>.<%topentry_day></time>
+        ｜
+        Category ⇒ <a href="<%topentry_category_link>"><%topentry_category></a>
+
+        <!--allow_comment-->
+        ｜
+        <a href="<%topentry_link>#comments">Comments (<%topentry_comment_num>)</a>
+        <!--/allow_comment-->
+
+        <!--allow_tb-->
+        ｜
+        <a href="<%topentry_link>#trackbacks" title="trackbacks<%topentry_no>">Trackbacks (<%topentry_tb_num>)</a>
+        <!--/allow_tb--></p>
+
+        <!--
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+                xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <rdf:Description
+           rdf:about="<%topentry_link>"
+           trackback:ping="<%url>tb.php/<%topentry_tb_no>"
+           dc:title="<%topentry_title>"
+           dc:identifier="<%topentry_link>"
+           dc:subject="<%topentry_category>"
+           dc:description="<%topentry_discription>"
+           dc:creator="<%author_name>"
+           dc:date="<%topentry_year>-<%topentry_month>-<%topentry_day>T<%topentry_hour>:<%topentry_minute>:<%topentry_second>+09:00" />
+        </rdf:RDF>
+        -->
+
+      </footer>
+
+    </div>
+  </section>
+
+  <!--/topentry-->
+  <!--/not_search_area-->
+  <!--/not_titlelist_area-->
+
+  <!-- ▼　アーカイブ ▼ -->
+  <!--titlelist_area-->
+  <section>
+    <h2 class="entry-title entry-title-h">全記事一覧表示</h2>
+    <div class="entry-body">
+       <ul style="padding-bottom:8px;">
+          <!--titlelist-->
+          <li><%titlelist_year>/<%titlelist_month>/<%titlelist_day> : <a href="<%titlelist_category_url>"><%titlelist_category></a> : <a href="<%titlelist_url>" title="<%titlelist_body>"><%titlelist_title></a></li>
+          <!--/titlelist-->
+       </ul>
+    </div>
+  </section>
+  <!--/titlelist_area-->
+
+  <!-- ▼　検索結果 ▼ -->
+  <!--search_area-->
+  <section>
+    <h2 class="entry-title entry-title-h">「<%sub_title>」 の検索結果</h2>
+    <div class="entry-body">
+       <ul style="padding-bottom:8px;">
+          <!--topentry-->
+          <li><%topentry_year>/<%topentry_month>/<%topentry_day> : <a href="<%topentry_category_link>"><%topentry_category></a> : <a href="<%topentry_link>" title="<%topentry_discription>"><%topentry_title></a></li>
+          <!--/topentry-->
+       </ul>
+    </div>
+  </section>
+  <!--/search_area-->
+
+</article>
+
+  <!-- ▼ コメント ▼ -->
+  <!--comment_area-->
+  <p id="comments" class="entry-title entry-title-h">この記事へのコメント</p>
+  <div class="entry-body">
+     <!--comment-->
+     <div id="comment<%comment_no>" class="comment">
+        <p class="com-meta"><span><%comment_title> - <%comment_url+name> - </span><%comment_year>年<%comment_month>月<%comment_day>日 <%comment_hour>:<%comment_minute>:<%comment_second></p>
+        <div class="com-body"><%comment_body></div>
+     </div>
+     <!--/comment-->
+
+     <!-- ▼　コメントフォーム ▼ -->
+     <div class="com-form">
+        <form action="./" method="post" name="comment_form" id="comment_form">
+        <dl>
+           <dt><input type="hidden" name="mode" value="regist" /><input type="hidden" name="comment[no]" value="<%pno>" /><label for="name">NAME ：</label></dt>
+           <dd><input id="name" type="text" name="comment[name]" value="<%cookie_name>" /></dd>
+           <dt><label for="url">URL ：</label></dt>
+           <dd><input id="url" type="text" name="comment[url]" value="<%cookie_url>" /></dd>
+           <dt><label for="comment">COMMENTS ：</label></dt>
+           <dd><textarea id="comment" name="comment[body]"></textarea></dd>
+           <dd><script type="text/javascript" src="<%template_comment_js>"></script></dd>
+        </dl>
+        <p align="right"><input type="submit" value="OK" /></p>
+        </form>
+     </div>
+
+  </div>
+  <!--/comment_area-->
+
+  <!-- ▼　トラックバック ▼ -->
+  <!--trackback_area-->
+  <p id="trackbacks" class="entry-title entry-title-h">トラックバック</p>
+  <div class="entry-body">
+     <!--trackback-->
+     <p id="trackback<%tb_no>" class="com-meta"><span><a href="<%tb_url>" target="_blank"><%tb_blog_name></a></span> - <%tb_year>年<%tb_month>月<%tb_day>日 <%tb_hour>:<%tb_minute></p>
+     <div class="com-body">
+        <p class="tb"><a href="<%tb_url>" target="_blank"><%tb_title></a></p>
+        <%tb_excerpt>
+     </div>
+     <!--/trackback-->
+     <div class="tb-url">
+        <p>URL :</p>
+        <input onfocus="this.select()" value="<%trackback_url>" readonly="readOnly" />
+     </div>
+  </div>
+  <!--/trackback_area-->
+
+  <!-- ▼　ページナビ ▼ -->
+  <nav id="content-nav">
+
+  <!--not_permanent_area-->
+  <!--nextpage--><a href="<%nextpage_url>">≪OLD</a> ｜ <!--/nextpage-->
+  <script type="text/javascript"><!-- pagenavi(5); //--></script>
+  <!--prevpage--> ｜ <a href="<%prevpage_url>">NEW≫</a><!--/prevpage-->
+  <!--/not_permanent_area-->
+
+  <!--permanent_area-->
+  <!--nextentry--><a href="<%nextentry_url>" title="<%nextentry_title>">≪OLD</a> ｜ <!--/nextentry-->
+  <a href="<%url>">HOME</a>
+  <!--preventry--> ｜ <a href="<%preventry_url>" title="<%preventry_title>">NEW≫</a><!--/preventry-->
+  <!--/permanent_area-->
+
+  </nav>
+
+
+</main><!-- メインボックス終了 -->
+
+<!-- ▼　左ボックス ▼ -->
+<div id="left-box">
+
+  <!--plugin-->
+  <!--plugin_first-->
+  <div class="side-title plugin_first"><%plugin_first_title></div>
+  <div class="side-body">
+     <!--plugin_first_description-->
+     <p><%plugin_first_description></p>
+     <!--/plugin_first_description-->
+     <%plugin_first_content>
+     <!--plugin_first_description2-->
+     <p><%plugin_first_description2></p>
+     <!--/plugin_first_description2-->
+  </div>
+  <!--/plugin_first-->
+  <!--/plugin-->
+
+</div>
+
+<!-- ▼ 右ボックス ▼ -->
+<div id="right-box">
+
+  <!--plugin-->
+  <!--plugin_second-->
+  <div class="side-title plugin_second"><%plugin_second_title></div>
+  <div class="side-body">
+     <!--plugin_second_description-->
+     <p><%plugin_second_description></p>
+     <!--/plugin_second_description-->
+     <%plugin_second_content>
+     <!--plugin_second_description2-->
+     <p><%plugin_second_description2></p>
+     <!--/plugin_second_description2-->
+  </div>
+  <!--/plugin_second-->
+  <!--/plugin-->
+
+   <!--plugin-->
+   <!--plugin_third-->
+   <div class="side-title plugin_third"><%plugin_third_title></div>
+   <div class="side-body">
+      <!--plugin_third_description-->
+      <p><%plugin_third_description></p>
+      <!--/plugin_third_description-->
+      <%plugin_third_content>
+      <!--plugin_third_description2-->
+      <p><%plugin_third_description2></p>
+      <!--/plugin_third_description2-->
+   </div>
+   <!--/plugin_third-->
+   <!--/plugin-->
+
+</div>
+
+</div><!-- ブログ終了 -->
+
+<!-- ▼　トップへ戻る機能 ▼ -->
+
+<div id="back-to-top">
+<a href="#top">トップへ戻る</a>
+</div>
+
+<!-- ▼　トップへ戻るここまで ▼ -->
+
+<!-- ▼　フッター （カスタマイズ注意） ▼ -->
+<footer id="footer">
+   <div class="copy">Copyright &copy; <%blog_name> All Rights Reserved. blog designed by <a href="http://subculsheets.blog.fc2.com/" title="サブカルシート" target="_blank">HiRo</a> and <a href="//vanillaice000.blog.fc2.com/" rel="nofollow" id="designer">Akira.</a></div>
+   <p class="fc2-pr"><%ad><%ad2></p>
+</footer>
+<!-- ▲　無断で著作権表示を消すことは禁止されています ▲ -->
+
+</body>
+</html>
+
+<!-- blog designed by HiRo 「http://subculsheets.blog.fc2.com/」 -->

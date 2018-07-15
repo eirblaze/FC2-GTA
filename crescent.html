@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="<%template_language>">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="<%template_charset>">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="<%author_name>">
+  <meta property="fb:app_id" content="290292324472569">
+  <!--index_area-->
+  <title>トップページ - <%blog_name></title>
+  <meta name="description" content="<%introduction>">
+  <link rel="canonical" href="<%url>">
+  <!--/index_area-->
+  <!--permanent_area-->
+  <title><%sub_title> - <!--topentry--><%topentry_category><!--/topentry--></title>
+  <meta name="description" content="<!--topentry--><%topentry_description><!--/topentry-->">
+  <link rel="canonical" href="<%url>blog-entry-<%pno>.html">
+  <!--/permanent_area-->
+  <!--date_area-->
+  <title><%now_year>年<%now_month>月の記事 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <link rel="canonical" href="<%url>blog-date-<%now_year><%now_month>.html">
+  <!--/date_area-->
+  <!--category_area-->
+  <title><%sub_title> - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <link rel="canonical" href="<%url>blog-category-<%cno>.html">
+  <!--/category_area-->
+  <!--search_area-->
+  <meta name="robots" content="noindex, nofollow">
+  <title>「<%sub_title>」の検索結果 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <!--/search_area-->
+  <!--tag_area-->
+  <title>ユーザータグ「<%sub_title>」が設定された記事 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <link rel="canonical" href="<%url>?tag=<%sub_title>">
+  <!--/tag_area-->
+  <!--titlelist_area-->
+  <meta name="description" content="全記事タイトルリスト - <%introduction>">
+  <title>全記事タイトルリスト - <%blog_name></title>
+  <link rel="canonical" href="<%url>archives.html">
+  <!--/titlelist_area-->
+  <!--edit_area-->
+  <meta name="robots" content="noindex, nofollow">
+  <title>コメントの編集 no.<%eno> - <%blog_name></title>
+  <!--/edit_area-->
+  <!--not_index_area--><!--not_category_area--><!--not_date_area--><!--not_search_area--><!--not_tag_area--><!--not_permanent_area--><!--not_titlelist_area--><!--page_area-->
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="<%url>">
+  <title><%blog_name> - <%current_page_num>ページ目<%cno></title>
+  <!--/page_area--><!--/not_titlelist_area--><!--/not_permanent_area--><!--/not_tag_area--><!--/not_search_area--><!--/not_date_area--><!--/not_category_area--><!--/not_index_area-->
+
+  <link rel="stylesheet" href="<%css_link>" media="all">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla%7CPlayfair+Display">
+  <link rel="alternate" type="application/rss+xml" href="<%url>?xml" title="RSS">
+
+  <!--not_edit_area-->
+  <script>function nw(n,e,a,w){var t=new Date,s=24,c=new Date(n,e-1,a,w);36e5*s>t-c&&document.write('<span class="new">New!</span>')}</script>
+  <!--/not_edit_area-->
+</head>
+
+<body>
+
+<!-- アクセス解析はここから -->
+
+<!-- ここの間 -->
+
+  <div id="wrapper">
+
+    <!-- ヘッダー -->
+    <header id="header-banner">
+      <div id="blog-name-container">
+        <<!--not_permanent_area-->h1<!--/not_permanent_area--><!--permanent_area-->div<!--/permanent_area--> id="blog-title">
+          <a href="<%url>"><%blog_name></a>
+        </<!--not_permanent_area-->h1<!--/not_permanent_area--><!--permanent_area-->div<!--/permanent_area-->>
+        <div id="welcome">Grand Theft Auto: San Andreas MOD Station</div>
+
+
+        <!--not_permanent_area--><!--not_category_area--><!--not_titlelist_area--><!--not_search_area--><!--not_date_area--><!--not_edit_area--><!--not_tag_area-->
+        <div id="site-description"><%introduction></div>
+        <!--/not_tag_area--><!--/not_edit_area--><!--/not_date_area--><!--/not_search_area--><!--/not_titlelist_area--><!--/not_category_area--><!--/not_permanent_area-->
+
+      </div>
+      <!-- グローバルナビゲーション -->
+      <div class="navi-menu">
+        <div id="navi-sizing">
+          <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="sp-navi">
+            <ul id="navi-list">
+              <li><a href="<%url>">HOME</a>
+              <li><a href="<%url>archives.html">INDEX</a>
+              <li><a href="http://sdrv.ms/U6qnC8">MOD DOWNLOAD</a><!-- 注)予備リンク, ABOUTのテキストを適宜修正+リンクアドレスを # と差し替え, 不要の方この一行削除 -->
+              <!-- <li class="pc-hide"><a href="<%url>?sp">MOBILE</a>注)スマホ版誘導ボタン必要な方コメント解除 1/2 -->
+              <li class="sp-hide"><a href="<%url>?xml" target="_blank">RSS</a>
+              <li><a href="<%server_url>control.php">LOG IN</a>
+              <!-- 注)リンク追加はここより上 -->
+              <li class="expand-form">
+                <form id="search-form" action="./" method="get">
+                  <input id="search-text" type="text" name="q" placeholder="Enter your text" value="">
+                  <input id="search-submit" type="submit">
+                  <span id="search-btn">SEARCH</span>
+                </form>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- グローバルナビゲーションここまで -->
+      <!-- パンくずリスト -->
+      <!--permanent_area-->
+      <ol id="breadcrumbs">
+        <!--topentry-->
+        <li><a href="<%url>" title="TOPページへ">TOP</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li><a href="<%topentry_category_link>"><%topentry_category></a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li><%sub_title>
+        <!--/topentry-->
+      </ol>
+      <!--/permanent_area-->
+      <!--category_area-->
+      <ol id="breadcrumbs">
+        <li><a href="<%url>" title="TOPページへ">TOP</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li><%sub_title>
+      </ol>
+      <!--/category_area-->
+      <!--titlelist_area-->
+      <ol id="breadcrumbs">
+        <li><a href="<%url>" title="TOPページへ">TOP</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li>Index
+      </ol>
+      <!--/titlelist_area-->
+      <!--search_area-->
+      <ol id="breadcrumbs">
+        <li><a href="<%url>" title="TOPページへ">TOP</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li><%sub_title> の検索結果
+      </ol>
+      <!--/search_area-->
+      <!--date_area-->
+      <ol id="breadcrumbs">
+        <li><a href="<%url>" title="TOPページへ">TOP</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li><%sub_title> の記事
+      </ol>
+      <!--/date_area-->
+      <!--edit_area-->
+      <ol id="breadcrumbs">
+        <li><a href="<%url>" title="TOPページへ">TOP</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li>コメント編集
+      </ol>
+      <!--/edit_area-->
+      <!--tag_area-->
+      <ol id="breadcrumbs">
+        <li><a href="<%url>" title="TOPページへ">TOP</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <li><%sub_title>
+      </ol>
+      <!--/tag_area-->
+      <!-- パンくずリストここまで -->
+    </header>
+    <!-- ヘッダーここまで -->
+
+    <div id="main-container">
+      <main id="primary">
+        <div id="main-fit-wrapper">
+          <div id="main-reserve">
+
+            <!-- トップページ -->
+            <!--not_edit_area--><!--not_titlelist_area--><!--not_search_area--><!--not_permanent_area-->
+            <div id="grid-container">
+              <!--topentry-->
+              <section class="grid-item">
+                <div class="grid-image">
+                  <a href="<%topentry_link>">
+                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<!--body_img--><%topentry_image_url><!--/body_img--><!--body_img_none-->https://blog-imgs-116.fc2.com/v/a/n/vanillaice000/crescentnoimage.jpg<!--/body_img_none-->" alt="<%topentry_title>" data-sizes="auto">
+                    <!--body_img_none-->
+                    <p class="grid-no-image">No image</p>
+                    <!--/body_img_none-->
+                  </a>
+                </div>
+                <div class="grid-content">
+                  <div class="grid-category">
+                    <a href="<%topentry_category_link>"><%topentry_category></a>
+                  </div>
+                  <h2 class="grid-title">
+                    <a href="<%topentry_link>"><%topentry_title></a>
+                    <script>nw('<%topentry_year>','<%topentry_month>','<%topentry_day>','<%topentry_hour>')</script>
+                  </h2>
+                  <time class="grid-datetime" datetime="<%topentry_year>-<%topentry_month>-<%topentry_day>T<%topentry_hour>:<%topentry_minute>:<%topentry_second>+09:00">
+                    <span><%topentry_year>-<%topentry_month>-<%topentry_day></span>
+                  </time>
+                  <div class="grid-comment">
+                    <!--allow_comment--><a href="<%topentry_link>#community"><!--/allow_comment--><i class="fa fa-commenting-o" aria-hidden="true"></i><%topentry_comment_num><!--allow_comment--></a><!--/allow_comment-->
+                  </div>
+                </div>
+              </section>
+              <!--/topentry-->
+            </div>
+            <!--/not_permanent_area--><!--/not_search_area--><!--/not_titlelist_area--><!--/not_edit_area-->
+            <!-- トップページ・個別記事ここまで -->
+
+            <!-- 個別記事ここから -->
+            <!--permanent_area-->
+            <!--topentry-->
+            <article class="main-body">
+              <header id="entry-header">
+                <h1 id="entry-title">
+                  <a href="<%topentry_link>"><%topentry_title></a>
+                  <script>nw('<%topentry_year>','<%topentry_month>','<%topentry_day>','<%topentry_hour>')</script>
+                </h1>
+                <div class="entry-header-content">
+                  <div class="entry-header-content-box" id="entry-author">
+                    <div id="author_img_wrapper" style="background: url(<%image>) center center /cover no-repeat;"></div>
+                    <p><%author_name></p>
+                  </div>
+                  <div class="entry-header-content-box" id="entry-datetime">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div id="datetime-wrapper">
+                      <time datetime="<%topentry_year>-<%topentry_month>-<%topentry_day>T<%topentry_hour>:<%topentry_minute>:<%topentry_second>+09:00">
+                        <span id="entry-day"><%topentry_year>-<%topentry_month>-<%topentry_day></span>
+                      </time>
+                    </div>
+                  </div>
+                  <div class="entry-header-content-box" id="entry-category">
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                    <div><a href="<%topentry_category_link>"><%topentry_category></a></div>
+                  </div>
+                  <div class="entry-header-content-box" id="entry-comment">
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                    <div><!--allow_comment--><a href="#community"><!--/allow_comment--><%topentry_comment_num><!--allow_comment-->&nbsp;COMMENTS<!--/allow_comment--><!--deny_comment--><!--/deny_comment--><!--allow_comment--></a><!--/allow_comment--></div>
+                  </div>
+                </div>
+              </header>
+              <div id="inner-contents">
+                <%topentry_body>
+                <img id="page-image" src="<!--body_img--><%topentry_image_url><!--/body_img--><!--body_img_none-->https://blog-imgs-116.fc2.com/v/a/n/vanillaice000/crescentnoimage.jpg<!--/body_img_none-->" alt="" class="emoji" style="display: none;">
+                <!--more-->
+                <div id="postscript">
+                  <%topentry_more>
+                </div>
+                <!--/more-->
+              </div>
+              <footer id="entry-footer">
+                <!--permanent_area-->
+                <div id="written-by">Posted by<span><%author_name></span></div>
+                <!--/permanent_area-->
+                <div id="entry-tag">
+                  <!--topentry_tag-->
+                  <!--tag_list--><a href="<%url>?tag=<%topentry_tag_list_parsename>"><%topentry_tag_list_name></a><!--/tag_list-->
+                  <!--/topentry_tag-->
+                </div>
+                <!-- 注)記事下SNSシェアボタン不要の方ここから削除 -->
+                <ul id="sns-navigation-ul">
+                  <li><a id="c-facebook" href="https://www.facebook.com/sharer.php?u=<%topentry_link>&amp;t=<%topentry_enc_title>" target="_blank" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <li><a id="c-twitter" href="https://twitter.com/intent/tweet?url=<%topentry_link>&amp;text=<%topentry_enc_title>" target="_blank" title="Tweet on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <li><a id="c-pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<%topentry_link>&amp;media=<%topentry_image_url>&amp;description=<%topentry_enc_title>" title="Pin it on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                  <li><a id="c-google-plus" href="https://plus.google.com/share?url=<%topentry_link>" target="_blank" title="Share on Google&#043;"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                  <!--not_permanent_area-->
+                  <li><a id="go-to-page" href="<%topentry_link>" title="Go to page"><i class="fa fa-share" aria-hidden="true"></i></a>
+                  <!--/not_permanent_area-->
+                  <!--permanent_area-->
+                  <li><a id="c-pencil" href="https://admin.blog.fc2.com/control.php?mode=editor&amp;process=load&amp;eno=<%topentry_no>" target="_blank" title="Only for admin"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <!--/permanent_area-->
+                </ul>
+                <!-- 注)記事下SNSシェアボタン不要の方ここまで削除 -->
+              </footer>
+            </article>
+            <!--/topentry-->
+            <!--/permanent_area-->
+            <!-- 個別記事ここまで -->
+
+            <!-- コメント関連 -->
+            <!--comment_area-->
+            <!-- コメント一覧ここから -->
+            <article class="main-body" id="comment-top">
+              <h3 class="another-title">Comments<!--topentry-->&nbsp;<%topentry_comment_num><!--/topentry--></h3>
+              <div class="comment-number comment-number<!--topentry--><%topentry_comment_num><!--/topentry-->">
+                There are no comments yet.
+              </div>
+              <!--comment-->
+              <div class="contents" id="comment<%comment_no>">
+                <div class="border-container name<%comment_name>">
+                  <div class="visitor-name">
+                    <%comment_name>&nbsp;&nbsp;<script>a="<%comment_url>",""!=a&&document.write('<a href="'+a+'" target="_blank" rel="nofollow"><i class="fa fa-link" aria-hidden="true"></i></a>');</script>
+                  </div>
+                  <div class="comment-title">
+                    <%comment_title>
+                  </div>
+                </div>
+                <div class="arrow-box">
+                  <p class="comment-body">
+                    <%comment_body>
+                  </p>
+                  <div class="comment-info">
+                    <%comment_year>/<%comment_month>/<%comment_day>&nbsp;(<%comment_youbi>)&nbsp;<%comment_hour>:<%comment_minute><span class="sp-hide">&nbsp;|&nbsp;</span><span class="sp-block-and-break"><a href="<%comment_edit_link>" title="<%template_edit_comment>">EDIT</a>&nbsp;|&nbsp;<a href="#comment_form" onclick="add_str(this);" title="To&nbsp;<%comment_name>さん">REPLY</a>&nbsp;|&nbsp;<a href="#comment-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="#community"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></span>
+                    <script>function add_str(arg){var str=document.getElementsByName("comment[title]")[0];str.value+=arg.title}</script>
+                  </div>
+                </div>
+              </div>
+              <!--/comment-->
+            </article>
+            <!-- コメント一覧ここまで -->
+
+            <!-- コメント投稿 -->
+            <article class="main-body" id="community">
+              <h3 class="another-title">Leave a reply</h3>
+              <div class="contents">
+                <form action="./" method="post" name="comment_form" id="comment_form">
+                  <div>
+                    <input type="hidden" name="mode" value="regist">
+                    <input type="hidden" name="comment[no]" value="<%pno>">
+                  </div>
+                  <div id="left-half">
+                    <input id="name" type="text" name="comment[name]" value="<%cookie_name>" placeholder="Name">
+                  </div><div id="right-half">
+                    <input id="subject" type="text" name="comment[title]" placeholder="Title" value="" onblur="if(this.value == '') this.value='No title';" onfocus="if(this.value == 'No title') this.value='';">
+                  </div>
+                  <div>
+                    <input id="url" type="text" name="comment[url]" value="<%cookie_url>" placeholder="Website">
+                  </div>
+                  <div>
+                    <script src="<%template_comment_js>"></script>
+                    <textarea id="comment" cols="50" rows="10" name="comment[body]" placeholder="Add your comment"></textarea>
+                  </div>
+                  <div>
+                    <input id="password" type="password" name="comment[pass]" placeholder="Password">
+                  </div>
+                  <div id="no-p">
+                    <input id="himitu" type="checkbox" name="comment[himitu]">
+                    <label for="himitu">Secret</label>
+                  </div>
+                  <button id="sendbtn" type="submit" form="comment_form" value="Send">Send</button>
+                </form>
+              </div>
+            </article>
+            <!-- コメント投稿ここまで -->
+            <!--/comment_area-->
+            <!-- コメント関連ここまで -->
+
+            <!-- トラックバック -->
+            <!--trackback_area-->
+            <article class="main-body" id="trackback">
+              <h3 class="another-title">Trackbacks<!--topentry-->&nbsp;<%topentry_tb_num><!--/topentry--></h3>
+              <input class="op" onfocus="this.select()" value="<%trackback_url>" readonly="readOnly">
+              <a href="javascript:window.location.replace('http://blog.fc2.com/?url='+window.location.href);" title="<%template_trackback_this>" id="for-trackback-word">Click to send a trackback(FC2 User)</a>
+              <!--trackback-->
+              <div class="contents">
+                <dl class="tb_dl">
+                  <dt class="tb_dt">この記事へのトラックバック</dt>
+                  <dd class="tb_dd">
+                    <ul class="tb_ul">
+                      <li class="tb_li" id="trackback<%tb_no>"><a href="<%tb_url>"><i class="fa fa-flag-o" aria-hidden="true"></i>&nbsp;<%tb_title></a>
+                      <li class="tb_li"><%tb_excerpt>
+                      <li class="tb_li tb_li2"><%tb_year>.<%tb_month>.<%tb_day> (<%tb_youbi>) <%tb_hour>:<%tb_minute> | <%tb_blog_name>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <!--/trackback-->
+            </article>
+            <!--/trackback_area-->
+            <!-- トラックバックここまで -->
+
+            <!-- コメント編集 -->
+            <!--edit_area-->
+            <article class="main-body" id="edit-community">
+              <h3 class="another-title">Edit your comment</h3>
+              <div class="contents">
+                <form action="./" method="post" name="comment_form" id="comment_form">
+                  <div>
+                    <input type="hidden" name="mode" value="edit">
+                    <input type="hidden" name="mode2" value="edited">
+                    <input type="hidden" name="edit[rno]" value="<%eno>">
+                  </div>
+                  <div id="left-half">
+                    <input id="name" type="text" name="edit[name]" value="<%edit_name>" placeholder="Name">
+                  </div><div id="right-half">
+                    <input id="subject" name="edit[title]" type="text" placeholder="Title" value="<%edit_title>">
+                  </div>
+                  <div>
+                    <input id="url" type="text" name="edit[url]" value="<%edit_url>" placeholder="Website">
+                  </div>
+                  <div>
+                    <script src="<%template_comment_js>"></script>
+                    <textarea id="comment" cols="50" rows="10" name="edit[body]" placeholder="Add your comment"><%edit_body></textarea>
+                  </div>
+                  <div>
+                    <input id="password" type="password" name="edit[pass]" placeholder="Password">
+                  </div>
+                  <div id="no-p">
+                    <input id="himitu" type="checkbox" name="edit[himitu]">
+                    <label for="himitu">SECRET</label>
+                  </div>
+                  <button id="sendbtn" type="submit" form="comment_form" value="Send">Send</button><button id="delbtn" type="submit" form="comment_form" name="edit[delete]" value="Delete">Delete</button>
+                </form>
+              </div>
+            </article>
+            <!--/edit_area-->
+            <!-- コメント編集ここまで -->
+
+            <!-- インデックス(全記事リスト) -->
+            <!--titlelist_area-->
+            <div class="main-body">
+              <h2 class="another-title">Index</h2>
+              <!--titlelist-->
+              <section class="contents">
+                <h3 class="list-title">
+                  <span><%titlelist_eno>: <a href="<%titlelist_url>"><%titlelist_title></a></span>
+                  <script>nw('<%titlelist_year>','<%titlelist_month>','<%titlelist_day>','<%titlelist_hour>')</script>
+                </h3>
+                <div class="list-entry">
+                  <p><%titlelist_body></p>
+                <ul class="number-of-cmtb">
+                  <li><i class="fa fa-commenting-o" aria-hidden="true"></i><%titlelist_comment_num>
+                  <li><i class="fa fa-refresh" aria-hidden="true"></i><%titlelist_tb_num>
+                </ul>
+                  <div class="list-entry-date">
+                    <%titlelist_year>/<%titlelist_month>/<%titlelist_day> (<%titlelist_youbi>) <%titlelist_hour>:<%titlelist_minute>
+                  </div>
+                  <div class="list-entry-category">
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i><a href="<%titlelist_category_url>"><%titlelist_category></a>
+                  </div>
+                </div>
+              </section>
+              <!--/titlelist-->
+            </div>
+            <!--/titlelist_area-->
+            <!-- インデックス(全記事リスト)ここまで -->
+
+            <!-- 検索結果 -->
+            <!--search_area-->
+            <div class="main-body">
+              <h2 class="another-title">Search Terms(<%total_num>hits)&nbsp;<%sub_title>&nbsp;<%current_page_num>/<%total_pages></h2>
+              <div class="hit-number hit<%total_num>">(≥o≤)<br><span>Not found</span></div>
+              <!--topentry-->
+              <section class="contents">
+                <h3 class="list-title">
+                  <a href="<%topentry_link>"><%topentry_title></a>
+                  <script>nw('<%topentry_year>','<%topentry_month>','<%topentry_day>','<%topentry_hour>')</script>
+                </h3>
+                <div class="list-entry cf">
+                  <a href="<%topentry_link>" class="list-a">
+                    <div class="thumbnails">
+                      <!--body_img-->
+                      <%topentry_image_72>
+                      <!--/body_img-->
+                      <!--body_img_none-->
+                      <div class="search-noimage">No image</div>
+                      <!--/body_img_none-->
+                    </div>
+                  </a>
+                  <p><%topentry_description></p>
+                </div>
+                <ul class="number-of-cmtb">
+                  <li><i class="fa fa-commenting-o" aria-hidden="true"></i><%topentry_comment_num>
+                  <li><i class="fa fa-refresh" aria-hidden="true"></i><%topentry_tb_num>
+                </ul>
+                <div class="list-entry-date">
+                  <%topentry_year>/<%topentry_month>/<%topentry_day> (<%topentry_youbi>) <%topentry_hour>:<%topentry_minute>
+                </div>
+                <div class="list-entry-category">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i><a href="<%topentry_category_link>"><%topentry_category></a>
+                </div>
+              </section>
+              <!--/topentry-->
+            </div>
+            <!--/search_area-->
+            <!-- 検索結果ここまで -->
+
+            <!-- 汎用ページナビ -->
+            <!--not_permanent_area--><!--not_edit_area--><!--not_titlelist_area-->
+            <div class="pagenation"></div>
+            <!--/not_titlelist_area--><!--/not_edit_area--><!--/not_permanent_area-->
+            <!-- 汎用ページナビここまで -->
+
+            <!-- 個別記事用ページナビ -->
+            <!--permanent_area-->
+            <ul class="posted-pager">
+              <li class="prev-entry">
+                <!--preventry-->
+                <a href="<%preventry_url>" class="prev-a">
+                  <div class="preventry-text"><i class="fa fa-caret-left" aria-hidden="true"></i>Prev entry</div>
+                  <div class="prev-pager-box">
+                    <div class="prev-pager-image"></div>
+                    <div class="preventry-title"><%preventry_title></div>
+                  </div>
+                </a>
+                <!--/preventry-->
+              <li class="next-entry">
+                <!--nextentry-->
+                <a href="<%nextentry_url>" class="next-a">
+                  <div class="nextentry-text">Next entry<i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                  <div class="next-pager-box">
+                    <div class="next-pager-image"></div>
+                    <div class="nextentry-title"><%nextentry_title></div>
+                  </div>
+                </a>
+                <!--/nextentry-->
+            </ul>
+            <!--/permanent_area-->
+            <!-- 個別記事用ページナビここまで -->
+
+            <!-- 全記事リスト用ページナビ -->
+            <!--titlelist_area-->
+            <ul class="titlelist-pager">
+              <li class="prev-entry">
+                <!--prevpage-->
+                <a href="<%prevpage_url>" class="prev-a" rel="nofollow">
+                  <div class="t-preventry-text"><i class="fa fa-caret-left" aria-hidden="true"></i>Prev page</div>
+                </a>
+                <!--/prevpage-->
+              <li class="next-entry">
+                <!--nextpage-->
+                <a href="<%nextpage_url>" class="next-a">
+                  <div class="t-nextentry-text">Next page<i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                </a>
+                <!--/nextpage-->
+            </ul>
+            <!--/titlelist_area-->
+            <!-- 全記事リスト用ページナビここまで -->
+
+          </div>
+        </div>
+      </main>
+
+      <aside id="secondary">
+        <div id="aside-fit-wrapper">
+          <div id="reserve">
+            <!--plugin_first-->
+            <section class="side-menu">
+              <h4><%plugin_first_title></h4>
+              <!--plugin_first_description-->
+              <div class="sidebar-style"><%plugin_first_description></div>
+              <!--/plugin_first_description-->
+              <div class="sidebar-style"><%plugin_first_content></div>
+              <!--plugin_first_description2-->
+              <div class="sidebar-style"><%plugin_first_description2></div>
+              <!--/plugin_first_description2-->
+            </section>
+            <!--/plugin_first-->
+            <!--plugin_second-->
+            <section class="side-menu">
+              <h4><%plugin_second_title></h4>
+              <!--plugin_second_description-->
+              <div class="sidebar-style"><%plugin_second_description></div>
+              <!--/plugin_second_description-->
+              <div class="sidebar-style"><%plugin_second_content></div>
+              <!--plugin_second_description2-->
+              <div class="sidebar-style"><%plugin_second_description2></div>
+              <!--/plugin_second_description2-->
+            </section>
+            <!--/plugin_second-->
+            <!--plugin_third-->
+            <section class="side-menu">
+              <h4><%plugin_third_title></h4>
+              <!--plugin_third_description-->
+              <div class="sidebar-style"><%plugin_third_description></div>
+              <!--/plugin_third_description-->
+              <div class="sidebar-style"><%plugin_third_content></div>
+              <!--plugin_third_description2-->
+              <div class="sidebar-style"><%plugin_third_description2></div>
+              <!--/plugin_third_description2-->
+            </section>
+            <!--/plugin_third-->
+          </div>
+        </div>
+      </aside>
+
+      <!-- 個別記事ブラウザサイドページ送り(カテゴリ間移動) 不要の方ここから削除 -->
+      <!--permanent_area-->
+      <div class="side-pager-left">
+        <!--prevcategoryentry-->
+        <div class="page-div-left">
+          <a href="<%prevcategoryentry_url>" rel="nofollow">
+            <div class="page-table">
+              <div class="title-cell">
+                <span class="page-title"><%prevcategoryentry_title></span>
+              </div>
+              <div class="circle-cell">
+                <span class="circle-left"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--/prevcategoryentry-->
+      </div>
+      <div class="side-pager-right">
+        <!--nextcategoryentry-->
+        <div class="page-div-right">
+          <a href="<%nextcategoryentry_url>">
+            <div class="page-table">
+              <div class="circle-cell">
+                <span class="circle-right"></span>
+              </div>
+              <div class="title-cell">
+                <span class="page-title"><%nextcategoryentry_title></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--/nextcategoryentry-->
+      </div>
+      <!--/permanent_area-->
+      <!-- 個別記事ブラウザサイドページ送り(カテゴリ間移動) 不要の方ここまで削除 -->
+
+    </div>
+
+    <footer id="footer" class="end">
+      <div id="page-scroll">
+        <div id="pagetop"><a href="#wrapper" id="go_top"><i class="fa fa-angle-up" aria-hidden="true"></i></a></div>
+        <div id="pagemiddle"><a href="#secondary" id="go_middle">Menu</a></div>
+        <div id="pagebottom"><a href="#footer" id="go_bottom"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+      </div>
+      <p class="foot">Designed by <a href="//vanillaice000.blog.fc2.com/" rel="nofollow" id="designer">Akira.</a></p>
+      <small id="copyright">Copyright &copy; <%blog_name> All Rights Reserved.</small>
+      <%ad> <%ad2>
+    </footer>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--not_permanent_area--><!--not_edit_area--><!--not_titlelist_area--><!--not_search_area-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/plugins/object-fit/ls.object-fit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+<!--/not_search_area--><!--/not_titlelist_area--><!--/not_edit_area--><!--/not_permanent_area-->
+
+<!-- 注)スクロールアンカー不要の方ここから削除 -->
+<script src="https://blog-imgs-118.fc2.com/v/a/n/vanillaice000/ressensorstickymin1_7_0mod.js"></script>
+<script>$(function(){$("#main-fit-wrapper,#aside-fit-wrapper").theiaStickySidebar({containerSelector:"#main-container",additionalMarginTop:40,minWidth:981})});</script>
+<!-- 注)スクロールアンカー不要の方ここまで削除 -->
+
+<!--not_titlelist_area--><!--not_permanent_area--><!--not_edit_area-->
+<script src="https://blog-imgs-80.fc2.com/v/a/n/vanillaice000/simplepagenationmin.js"></script>
+<script>$(function(){$('.pagenation').pagination({displayedPages:4,pages:<%total_pages>,cssStyle:'light-theme',prevText:'&lsaquo;',nextText:'&rsaquo;',<!--page_area-->hrefTextPrefix:'page-',hrefTextSuffix:'.html',<!--/page_area--><!--category_area-->hrefTextPrefix:'blog-category-<%cno>-',hrefTextSuffix:'.html',<!--/category_area--><!--date_area-->hrefTextPrefix:'blog-date-<%now_year><%now_month>-',hrefTextSuffix:'.html',<!--/date_area--><!--search_area-->hrefTextPrefix:'?q=<%search_word>&page=',hrefTextSuffix:'',<!--/search_area--><!--tag_area-->hrefTextPrefix:'?tag=<%tag_word>&page=',hrefTextSuffix:'',<!--/tag_area-->currentPage:<%current_page_num>});});</script>
+<!--/not_edit_area--><!--/not_permanent_area--><!--/not_titlelist_area-->
+
+<script>var _ua=(function(u){return{Tablet:(u.indexOf('windows')!=-1&&u.indexOf('touch')!=-1&&u.indexOf('tablet pc')==-1)||u.indexOf('ipad')!=-1||(u.indexOf('android')!=-1&&u.indexOf('mobile')==-1)||(u.indexOf('firefox')!=-1&&u.indexOf('tablet')!=-1)||u.indexOf('kindle')!=-1||u.indexOf('silk')!=-1||u.indexOf('playbook')!=-1,Mobile:(u.indexOf('windows')!=-1&&u.indexOf('phone')!=-1)||u.indexOf('iphone')!=-1||u.indexOf('ipod')!=-1||(u.indexOf('android')!=-1&&u.indexOf('mobile')!=-1)||(u.indexOf('firefox')!=-1&&u.indexOf('mobile')!=-1)||u.indexOf('blackberry')!=-1}})(window.navigator.userAgent.toLowerCase());if(_ua.Mobile){$('.mobile').css('display','block');$('.sp-block-and-break').css('display','block');$('.sp-hide').css('display','none');$('.pc-hide').css('display','inline-block');$('#page-scroll').css('bottom','115px');$('input,textarea,select').css('font-size','16px');}else if(_ua.Tablet){$('.sp-hide').css('display','none');$('.pc-hide').css('display','inline-block');$('#page-scroll').css('bottom','210px');$('input,textarea,select').css('font-size','16px');}else{<!--permanent_area-->$(function(){$('.side-pager-left').hover(function(){$(this).stop().animate({'left':'0px'},500)},function(){$(this).stop().animate({'left':'-157px'},300)})});$(function(){$('.side-pager-right').hover(function(){$(this).stop().animate({'right':'0px'},500)},function(){$(this).stop().animate({'right':'-157px'},300)})});<!--/permanent_area-->}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script>$(function(){$('a[href^="#"]').click(function(){var o=$(this).attr('href'),t=$('#'==o||''==o?'html':o),e=t.offset().top;return $('html,body').animate({scrollTop:e},800,'easeInOutExpo'),!1})});</script>
+
+<!--permanent_area-->
+<script>$('#fc2relate_entry_thumbnail_area .relate_dd .relate_ul .relate_entry_thumbnail .relate_entry_thumbnail_noimg').before('<div class="related-overlay"></div>');</script>
+<script>$(function(){$.ajax({type:'GET',url:'<!--preventry--><%preventry_url><!--/preventry-->',dataType:'html',success:function(a){var b=$(a).find('#page-image').attr('src');$('.prev-pager-image').css('background-image','url('+b+')')}});$.ajax({type:'GET',url:'<!--nextentry--><%nextentry_url><!--/nextentry-->',dataType:'html',success:function(a){var b=$(a).find('#page-image').attr('src');$('.next-pager-image').css('background-image','url('+b+')')}});$.ajax({type:'GET',url:'<!--prevcategoryentry--><%prevcategoryentry_url><!--/prevcategoryentry-->',dataType:'html',success:function(a){var b=$(a).find('#page-image').attr('src');$('.circle-left').css('background-image','url('+b+')')}});$.ajax({type:'GET',url:'<!--nextcategoryentry--><%nextcategoryentry_url><!--/nextcategoryentry-->',dataType:'html',success:function(a){var b=$(a).find('#page-image').attr('src');$('.circle-right').css('background-image','url('+b+')')}})});</script>
+<!-- 個別記事ブラウザサイドページ送り(カテゴリ間移動) 不要の方ここから削除 -->
+<script>var start_pos=0;$(window).scroll(function(e){var a=$(this).scrollTop();if(a>start_pos){$('.side-pager-left,.side-pager-right').removeClass('appear')}else{$('.side-pager-left,.side-pager-right').addClass('appear')}start_pos=a});</script>
+<!-- 個別記事ブラウザサイドページ送り(カテゴリ間移動) 不要の方ここまで削除 -->
+<!--/permanent_area-->
+
+<script>$(function(){if($('#sh_fc2blogheadbar').length){$('.navi-menu').addClass('navi-menu-adjust');return true}else{return false}});</script>
+<script>var startPos=0;$(window).scroll(function(){var a=$(this).scrollTop();if(a>startPos){if($(window).scrollTop()>=200){$('.navi-menu').css('top','-'+40+'px');$('.navi-menu-adjust').css('top','-'+67+'px')}}else{$('.navi-menu').css('top',0+'px');$('.navi-menu-adjust').css('top',27+'px')}startPos=a});</script>
+<script>$(window).scroll(function(){if($(window).scrollTop()>100){$('.navi-menu').addClass('adding-shadow');}else{$('.navi-menu').removeClass('adding-shadow');}})</script>
+
+<!-- navi breakpoint 1/2 -->
+<script>$(window).on('load resize',function(){if(window.matchMedia('(max-width: 767px)').matches){$('.sp-navi').addClass('collapsed')}else{$('.sp-navi').removeClass('collapsed');$('.sp-navi').removeAttr('style')}});$('.mobile-toggle').on("click",function(){$(this).toggleClass('open-navi');$('.collapsed').slideToggle();return false})</script>
+
+<script src="https://blog-imgs-116.fc2.com/v/a/n/vanillaice000/footerFixedmin_20171205030942fa9.js"></script>
+
+<!-- hack for Microsoftbrowser -->
+<script>
+if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./)) {
+  $('body').on("mousewheel", function () {
+    event.preventDefault();
+    var wd = event.wheelDelta;
+    var csp = window.pageYOffset;
+    window.scrollTo(0, csp - wd);
+  });
+}
+</script>
+
+<!--permanent_area-->
+<!--topentry-->
+<script type="application/ld+json">
+[{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "datePublished": "<%topentry_year>-<%topentry_month>-<%topentry_day>T<%topentry_hour>:<%topentry_minute>:<%topentry_second>+09:00",
+  "dateModified": "<%topentry_modified_year>-<%topentry_modified_month>-<%topentry_modified_day>T<%topentry_modified_hour>:<%topentry_modified_minute>:<%topentry_modified_second>+09:00",
+  "articleSection": "<%topentry_category>",
+  "headline": "<%topentry_title>",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<%topentry_link>"
+  },
+  "description": "<%topentry_description>",
+  "image": {
+    "@type": "ImageObject",
+    "url": "<!--body_img--><%topentry_image_url><!--/body_img--><!--body_img_none--><%image><!--/body_img_none-->",
+    "width": "300",
+    "height": "auto"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "<%author_name>"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "<%blog_name>",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "<%image>",
+      "width": "150",
+      "height": "auto"
+    }
+  }
+},
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement":
+  [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item":
+      {
+        "@id": "<%url>",
+        "name": "HOME"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item":
+      {
+        "@id": "<%topentry_category_link>",
+        "name": "<%topentry_category>"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item":
+      {
+        "@id": "<%topentry_link>",
+        "name": "<%sub_title>"
+      }
+    }
+  ]
+}]
+</script>
+<!--/topentry-->
+<!--/permanent_area-->
+
+</body>
+</html>
