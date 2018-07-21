@@ -25,46 +25,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- ▼ メタデータ ▼ -->
   <meta name="author" content="<%author_name>">
-  <meta property="fb:app_id" content="290292324472569">
+  <!-- meta property="fb:app_id" content="290292324472569" -->
   <meta name="keywords" content="grand theft auto san andreas, GTASA, blog, FC2, CLEO, MOD" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="<%blog_name>" />
 
   <!--index_area-->
   <title><%blog_name> - トップページ</title>
+  <!-- Meta Data -->
   <meta name="description" content="<%introduction>">
   <link rel="canonical" href="<%url>">
+  <!-- OG -->
+  <meta property="og:title" content="<%blog_name> - トップページ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="<%introduction>" />
+  <meta property="og:url" content="<%url>" />
+  <meta property="og:image" content="https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg" />
   <!--/index_area-->
 
   <!--permanent_area-->
   <title><%sub_title> - <!--topentry--><%topentry_category><!--/topentry--></title>
+  <!-- Meta Data -->
   <meta name="description" content="<!--topentry--><%topentry_description><!--/topentry-->">
   <link rel="canonical" href="<%url>blog-entry-<%pno>.html">
+  <!-- OG -->
+  <meta property="og:title" content="<%sub_title> - <!--topentry--><%topentry_category><!--/topentry-->" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="<!--topentry--><%topentry_description><!--/topentry-->" />
+  <meta property="og:url" content="<%url>blog-entry-<%pno>.html" />
+  <meta property="og:image" content="<!--body_img--><%topentry_image_url><!--/body_img--><!--body_img_none-->https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg<!--/body_img_none-->" />
   <!--/permanent_area-->
 
   <!--date_area-->
   <title><%now_year>年<%now_month>月の記事 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <!-- Meta Data -->
   <link rel="canonical" href="<%url>blog-date-<%now_year><%now_month>.html">
+  <!-- OG -->
+  <meta property="og:title" content="<%now_year>年<%now_month>月の記事 - <%current_page_num>ページ目<%cno> - <%blog_name>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%url>blog-date-<%now_year><%now_month>.html" />
+  <meta property="og:image" content="https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg" />
   <!--/date_area-->
 
   <!--category_area-->
   <title><%sub_title> - <%current_page_num>ページ目<%cno> - <%blog_name></title>
   <link rel="canonical" href="<%url>blog-category-<%cno>.html">
+  <!-- OG -->
+  <meta property="og:title" content="<%sub_title> - <%current_page_num>ページ目<%cno> - <%blog_name>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%url>blog-category-<%cno>.html" />
+  <meta property="og:image" content="https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg" />
   <!--/category_area-->
 
   <!--search_area-->
   <meta name="robots" content="noindex, nofollow">
   <title>「<%sub_title>」の検索結果 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
+  <!-- OG -->
+  <meta property="og:title" content="「<%sub_title>」の検索結果 - <%current_page_num>ページ目<%cno> - <%blog_name>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg" />
   <!--/search_area-->
 
   <!--tag_area-->
   <title>ユーザータグ「<%sub_title>」が設定された記事 - <%current_page_num>ページ目<%cno> - <%blog_name></title>
   <link rel="canonical" href="<%url>?tag=<%sub_title>">
+  <!-- OG -->
+  <meta property="og:title" content="ユーザータグ「<%sub_title>」が設定された記事 - <%current_page_num>ページ目<%cno> - <%blog_name>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%url>?tag=<%sub_title>" />
+  <meta property="og:image" content="https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg" />
   <!--/tag_area-->
 
   <!--titlelist_area-->
   <meta name="description" content="全記事タイトルリスト - <%introduction>">
   <title>全記事タイトルリスト - <%blog_name></title>
   <link rel="canonical" href="<%url>archives.html">
+  <!-- OG -->
+  <meta property="og:description" content="全記事タイトルリスト - <%introduction>" />
+  <meta property="og:title" content="全記事タイトルリスト - <%blog_name>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%url>archives.html" />
+  <meta property="og:image" content="https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg" />
   <!--/titlelist_area-->
 
   <!--edit_area-->
@@ -76,16 +120,17 @@
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="<%url>">
   <title><%blog_name> - <%current_page_num>ページ目<%cno></title>
+  <!-- OG -->
+  <meta property="og:title" content="<%blog_name> - <%current_page_num>ページ目<%cno>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%url>" />
+  <meta property="og:image" content="https://blog-imgs-106-origin.fc2.com/e/i/r/eirblaze/title6.jpg" />
   <!--/page_area--><!--/not_titlelist_area--><!--/not_permanent_area--><!--/not_tag_area--><!--/not_search_area--><!--/not_date_area--><!--/not_category_area--><!--/not_index_area-->
 
   <link rel="stylesheet" href="<%css_link>" media="all">
   <link rel="alternate" type="application/rss+xml" href="<%url>?xml" title="RSS" />
 
  <!-- ▼ 外部サービス ▼ -->
-
-  <!--[if lt IE 9]>
-  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-  <![endif]-->
 
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript">google.load("jquery", "1.3");</script>
@@ -195,6 +240,10 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
 
   <!--[if lte IE 9.0]>
   <script type="text/javascript" src="https://blog-imgs-119.fc2.com/e/i/r/eirblaze/css3-mediaqueries.js"></script>
