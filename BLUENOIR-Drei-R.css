@@ -490,11 +490,13 @@ a:hover > img
    background-repeat: no-repeat;
 }
 
-.entry-body .topentry h1, {
+.entry-body .topentry h1 {
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 10px;
+  font-size: 1.3em;
 }
+
 .entry-body .topentry h2,
 .entry-body .topentry h3,
 .entry-body .topentry h4,
@@ -503,6 +505,7 @@ a:hover > img
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 .entry-body .topentry p
@@ -518,7 +521,7 @@ a:hover > img
 {list-style-type: disc}
 
 .entry-body .topentry li
-{margin-left: 25px;}
+{margin-left: 35px;}
 
 .entry-body .topentry img {
   max-width: 100%;
