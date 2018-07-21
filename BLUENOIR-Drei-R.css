@@ -490,6 +490,11 @@ a:hover > img
    background-repeat: no-repeat;
 }
 
+.entry-body img {
+  max-width: 100%;
+  height: auto;
+}
+
 .entry-body .bg-opacity {
   border: 1px solid #333;
   border-top: none;
