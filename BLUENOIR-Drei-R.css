@@ -490,8 +490,26 @@ a:hover > img
    background-repeat: no-repeat;
 }
 
+.entry-body .topentry h1, {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.entry-body .topentry h2,
+.entry-body .topentry h3,
+.entry-body .topentry h4,
+.entry-body .topentry h5,
+.entry-body .topentry h6 {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 .entry-body .topentry p
-{margin-bottom: 10px}
+{
+  margin-bottom: 10px;
+  text-indent: 1em;
+}
 
 .entry-body .topentry ol
 {list-style-type: decimal}
