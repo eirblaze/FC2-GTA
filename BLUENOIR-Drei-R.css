@@ -8,7 +8,7 @@
    height: 437px;
 }
 
-/* ▼　フォントサイズを変える場合は、下記のパーセンテージで指定しましょう ▼
+/* ▼ フォントサイズを変える場合は、下記のパーセンテージで指定しましょう ▼
 
    10px   =      77%
    11px   =      85%
@@ -27,7 +27,7 @@
    24px   =     182%
    25px   =     189%
 
-   ▼　リセットCSS （基本データです。いじる時は注意しましょう）　▼ */
+   ▼ リセットCSS （基本データです。いじる時は注意しましょう） ▼ */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -185,7 +185,7 @@ a:hover > img
 
 /* レイアウト設定 --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* ▼　ヘッダー ▼ */
+/* ▼ ヘッダー ▼ */
 #ad {
   display: inline-block;
 }
@@ -242,7 +242,7 @@ a:hover > img
    margin-left: 5px;
 }
 
-/* ▼　メニュー ▼ */
+/* ▼ メニュー ▼ */
 
 #menu {
    margin: 16px auto;
@@ -338,7 +338,7 @@ a:hover > img
  }
 }
 
-/* ▼　レイアウト ▼ */
+/* ▼ レイアウト ▼ */
 
 @media screen and (min-width: 1284px ) {
   .outline {
@@ -431,7 +431,7 @@ a:hover > img
 
 }
 
-/* ▼　メインボックス　▼ */
+/* ▼ メインボックス ▼ */
 
 .main-box .main-section {
   width: auto;
@@ -442,7 +442,7 @@ a:hover > img
 }
 
 
-/* ▼　カテゴリ　▼ */
+/* ▼ カテゴリ ▼ */
 .pageinfo-category a {
    display: block;
    padding: 5px 10px;
@@ -454,7 +454,7 @@ a:hover > img
    background-color: #15497b;
 }
 
-/* ▼　エントリー ▼ */
+/* ▼ エントリー ▼ */
 
 .entry-title {
    margin: 0;
@@ -629,7 +629,7 @@ a:hover > img
    border: 1px solid #444;
 }
 
-/* ▼　ソーシャルリンク ▼ */
+/* ▼ ソーシャルリンク ▼ */
 
 .rn-social {
    height: 32px;
@@ -670,7 +670,7 @@ a:hover > img
 
 .rn-live:hover {background: url(https://blog-imgs-43-origin.fc2.com/s/u/b/subculsheets/social.png) no-repeat -128px 0;}
 
-/* ▼　コメント＆トラックバック ▼ */
+/* ▼ コメント＆トラックバック ▼ */
 
 .com-meta {
    font-size: 93%;
@@ -698,7 +698,7 @@ a:hover > img
 
 .tb-url input {width: 350px;}
 
-/* ▼　コメントフォーム ▼ */
+/* ▼ コメントフォーム ▼ */
 
 .com-form {
    /* width: 500px; */
@@ -755,7 +755,7 @@ a:hover > img
    background-color: #000;
 }
 
-/* ▼　ページナビ ▼ */
+/* ▼ ページナビ ▼ */
 
 #content-nav {
    color: #444;
@@ -765,7 +765,7 @@ a:hover > img
    margin-bottom: 16px;
 }
 
-/* ▼　サイド ▼ */
+/* ▼ サイド ▼ */
 
 .side-title {
    text-align: center;
@@ -838,7 +838,7 @@ a:hover > img
 
 .side-body a:hover > img {border: 1px solid #95bfea;}
 
-/* ▼　プラグイン ▼ */
+/* ▼ プラグイン ▼ */
 
 .fc2afb {
  margin-left: auto;
@@ -888,7 +888,7 @@ table.calender td a:hover {
    background: #95bfea;
 }
 
-/* ▼　スポンサー ▼ */
+/* ▼ スポンサー ▼ */
 
 .ad_l_sample_block {
  width:100%;
@@ -967,7 +967,7 @@ a.ad-r-fc2cm:hover {
 */
 
 
-/* ▼　フッター ▼ */
+/* ▼ フッター ▼ */
 
 #footer {
    color: silver;
