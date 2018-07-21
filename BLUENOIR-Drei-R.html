@@ -303,22 +303,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <!--/permanent_area-->
       <div class="bg-opacity">
 
-       <%topentry_body>
+        <div class="topentry">
+          <%topentry_body>
 
-       <!-- ▼　追記 ▼ -->
-       <!--more_link-->
-       <div class="clearfix">
-       <div class="open-more"><a href="<%topentry_link>" target="_blank">● 別タブで記事を開く ●</a></div>
-       <div id="varP<%topentry_no>" class="read-more"><a href="<%topentry_link>#<%topentry_no>" onclick="showMore(<%topentry_no>,'<%topentry_link>#<%topentry_no>');return false;">▼ 続きを読む ▼</a></div>
-       </div>
-       <div id="varXYZ<%topentry_no>" style="display:none;padding-top: 15px;"><%topentry_more></div>
-       <!--/more_link-->
+          <!-- ▼　追記 ▼ -->
+          <!--more_link-->
+          <div class="clearfix">
+          <div class="open-more"><a href="<%topentry_link>" target="_blank">● 別タブで記事を開く ●</a></div>
+          <div id="varP<%topentry_no>" class="read-more"><a href="<%topentry_link>#<%topentry_no>" onclick="showMore(<%topentry_no>,'<%topentry_link>#<%topentry_no>');return false;">▼ 続きを読む ▼</a></div>
+          </div>
+          <div id="varXYZ<%topentry_no>" style="display:none;padding-top: 15px;"><%topentry_more></div>
+          <!--/more_link-->
 
-       <!--more-->
-       <%topentry_more>
-       <!--/more-->
+          <!--more-->
+          <%topentry_more>
+          <!--/more-->
+        </div>
 
-       <footer>
+        <footer>
 
           <!--permanent_area-->
 
