@@ -604,32 +604,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!--/not_permanent_area-->
 
   <!--permanent_area-->
+  <!--nextentry-->
   <div class="arrow">
-    <script type="text/javascript">
-    //<!--
-      pagination_arrow(
-        '<!--nextentry--><%nextentry_url><!--/nextentry-->',
-        '≪OLD',
-        '<!--nextentry--><%nextentry_title><!--/nextentry-->'
-      );
-    //-->
-    </script>
+      <a href="<%nextentry_url>" title="<%nextentry_title>">≪OLD</a>
   </div>
+  <!--/nextentry-->
   <div class="arrow">
     <a href="<%url>">HOME</a>
   </div>
-
+  <!--preventry-->
   <div class="arrow">
-    <script type="text/javascript">
-    //<!--
-      pagination_arrow(
-        '<!--preventry--><%preventry_url><!--/preventry-->',
-        'NEW≫',
-        '<!--preventry--><%preventry_title><!--/preventry-->'
-      );
-    //-->
-    </script>
+    <a href="<%preventry_url>" title="<%preventry_title>">NEW≫</a>
   </div>
+  <!--/preventry-->
   <!--/permanent_area-->
 
   </nav>
