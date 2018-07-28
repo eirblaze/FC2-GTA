@@ -829,6 +829,7 @@ a:hover > img
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  margin-bottom: 3px;
 }
 
 #content-nav .arrow a {
@@ -844,14 +845,19 @@ ul.pagination:after {
   clear: both;
 }
 
+
+ul.pagination {
+  height: 100%;
+}
+
 ul.pagination li {
   float: left;
-  width: 20px;
+  width: 27px;
   margin-left: 3px;
   margin-right: 3px;
   border: solid 1px #444;
   margin-bottom: 3px;
-  height: 100%;
+  height: auto;
 }
 
 #content-nav li a,
