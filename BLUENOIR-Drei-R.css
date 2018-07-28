@@ -794,6 +794,11 @@ a:hover > img
    background-color: #000;
 }
 
+/* ▼ トラックバック ▼ */
+.tb-url input {
+   width: 100%;   
+}
+
 /* ▼ ページネーション ▼ */
 
 #content-nav {
