@@ -139,21 +139,31 @@
 -->
 <script>
   //<!--
+  /*
   $(function(){
     var start_pos = 0;
-    var jQpagenav = $('#menu');
 
     $(window).scroll(function(e){
+      //var jQmenu = $('#menu');
       var current_pos = $(this).scrollTop();
-      if (current_pos > start_pos) {
-        jQpagenav.addClass('sticky');
+
+      console.info(`current_pos: ${current_pos}`);
+      if (
+        current_pos > start_pos
+        && current_pos > 530
+        && !$('#menu').is( ":hidden" )
+      ) {
+        // 下へ
+        $('#menu').slideUp();
       } else {
-        jQpagenav.removeClass('sticky');
+        // 上へ
+        $('#menu').slideDown();
       }
       start_pos = current_pos;
     });
 
   });
+  */
   //-->
 </script>
 
