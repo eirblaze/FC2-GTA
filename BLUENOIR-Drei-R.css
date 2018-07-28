@@ -798,8 +798,10 @@ a:hover > img
 
 #content-nav {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align-last: center;
   color: #444;
