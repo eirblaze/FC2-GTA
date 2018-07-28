@@ -1111,6 +1111,7 @@ a.ad-r-fc2cm:hover {
   position: fixed;
   bottom: 10%;
   right: 0;
+  z-index: 11;
   /*! width: 4%; */
 
   /* 縦書き */
