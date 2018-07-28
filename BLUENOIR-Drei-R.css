@@ -849,12 +849,14 @@ ul.pagination li {
   margin-right: 3px;
   border: solid 1px #444;
   margin-bottom: 3px;
+  height: 100%;
 }
 
 #content-nav li a,
 #content-nav li b {
   display: block;
   padding: 1px 1px;
+  height: 100%;
 }
 
 #content-nav a:hover{
