@@ -168,8 +168,8 @@
 </script>
 
 
-<!-- ▼ ページナビ ▼ -->
-<!--index_area-->
+<!-- ▼ ページネーション生成 ▼ -->
+<!--not_permanent_area-->
   <script type="text/javascript">
   //<!--
 
@@ -181,6 +181,8 @@
   {
     var n = total_pages;
     if ((n) == '') return;
+
+    var write = '<ul class="pagination">';
     url = nextpageurl;
     add = -1;
     if (url == '') {
@@ -214,37 +216,44 @@
     if (c > n) c = n;
     if (w < 0) w = 0;
     ww = 2 * w + 1;
-    for (i = 1; i <= n; i++) {
-      dot = '<a href=\"' + base + (i - 1) + ext + '\" title=\"' + i + '\">.</a>'
-      if ((c - w <= i && i <= c + w) || i == 1 || i == n
-       || (i == 2 && c - w - 1 == i) || (i == n - 1 && c + w + 1 == i)) {
+    for (i = n; i > 0; i--) {
+      dot = '<li><a href=\"' + base + (i - 1) + ext + '\" title=\"' + i + '\">...</a></li>'
+      if (
+        (c - w <= i && i <= c + w)
+        || i == 1
+        || i == n
+        || (i == 2 && c - w - 1 == i)
+        || (i == n - 1 && c + w + 1 == i)
+      ) {
          if (i == c) {
-           document.write(' <b>' + i + '</b> ');
+           write += '<li><b>' + i + '</b></li>';
          } else {
-           document.write(' <a href=\"' + base + (i - 1) + ext + '\">' + i + '</a> ');
+          write += '<li><a href=\"' + base + (i - 1) + ext + '\">' + i + '</a></li>';
          }
       } else if (i < c - w) {
         if (i - 1 <= (c - w - 2) % ww) {
           if (i - 1 == Math.floor(((c - w - 2) % ww + 1) / 2)) {
-            document.write(dot);
+            write += dot;
           }
         } else if ((c - i) % ww == 0) {
-          document.write(dot);
+          write += dot;
         }
       } else if (i > c + w) {
         if (n - i <= (n - c + w) % ww) {
           if (n - i == Math.floor(((n - c + w) % ww + 1) / 2)) {
-            document.write(dot);
+            write += dot;
           }
         } else if ((i - c) % ww == 0) {
-          document.write(dot);
+          write += dot;
         }
       }
     }
+    write += '</ul>';
+    document.write(write);
   }
 
   //--></script>
-<!--/index_area-->
+<!--/not_permanent_area-->
 
   <!--prevpage--><link rel="prev" href="<%prevpage_url>" title="<%template_prevpage>" /><!--/prevpage-->
   <!--nextpage--><link rel="next" href="<%nextpage_url>" title="<%template_nextpage>" /><!--/nextpage-->
@@ -560,23 +569,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <!--/trackback_area-->
 
-  <!-- ▼　ページナビ ▼ -->
+  <!-- ▼ ページネーション ▼ -->
   <nav id="content-nav">
 
   <!--not_permanent_area-->
-  <!--nextpage--><a href="<%nextpage_url>">≪OLD</a> ｜ <!--/nextpage-->
-  <script type="text/javascript"><!-- pagenavi(5); //--></script>
-  <!--prevpage--> ｜ <a href="<%prevpage_url>">NEW≫</a><!--/prevpage-->
+  <!--nextpage-->
+  <div class="arrow">
+    <a href="<%nextpage_url>">≪OLD</a>
+  </div>
+  <!--/nextpage-->
+  <script type="text/javascript">
+  //<!--
+    pagenavi(3);
+  //-->
+  </script>
+  <!--prevpage-->
+  <div class="arrow">
+    <a href="<%prevpage_url>">NEW≫</a>
+  </div>
+  <!--/prevpage-->
   <!--/not_permanent_area-->
 
   <!--permanent_area-->
-  <!--nextentry--><a href="<%nextentry_url>" title="<%nextentry_title>">≪OLD</a> ｜ <!--/nextentry-->
-  <a href="<%url>">HOME</a>
-  <!--preventry--> ｜ <a href="<%preventry_url>" title="<%preventry_title>">NEW≫</a><!--/preventry-->
+  <!--nextentry-->
+  <div class="arrow">
+    <a href="<%nextentry_url>" title="<%nextentry_title>">≪OLD</a>
+  </div>
+  <!--/nextentry-->
+  <div class="arrow">
+    <a href="<%url>">HOME</a>
+  </div>
+  <!--preventry-->
+  <div class="arrow">
+    <a href="<%preventry_url>" title="<%preventry_title>">NEW≫</a>
+  </div>
+  <!--/preventry-->
   <!--/permanent_area-->
 
   </nav>
-
 
 </main><!-- メインボックス終了 -->
 
