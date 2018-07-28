@@ -251,9 +251,18 @@
     write += '</ul>';
     document.write(write);
   }
-
   //--></script>
 <!--/not_permanent_area-->
+<script>//<!--
+  function pagination_arrow(url, text, title = '') {
+    if (url == '') {
+      document.write('<b>' + text + '</b>');
+    } else {
+      document.write('<a href=\"' + url + '\" title=\"' + title + '\">' + text + '</a>');
+    }
+  }
+//--></script>
+
 
   <!--prevpage--><link rel="prev" href="<%prevpage_url>" title="<%template_prevpage>" /><!--/prevpage-->
   <!--nextpage--><link rel="next" href="<%nextpage_url>" title="<%template_nextpage>" /><!--/nextpage-->
@@ -573,37 +582,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav id="content-nav">
 
   <!--not_permanent_area-->
-  <!--nextpage-->
   <div class="arrow">
-    <a href="<%nextpage_url>">≪OLD</a>
+    <script type="text/javascript">
+    //<!--
+      pagination_arrow('<!--nextpage--><%nextpage_url><!--nextpage-->', '≪OLD');
+    //-->
+    </script>
   </div>
-  <!--/nextpage-->
   <script type="text/javascript">
   //<!--
     pagenavi(3);
   //-->
   </script>
-  <!--prevpage-->
   <div class="arrow">
-    <a href="<%prevpage_url>">NEW≫</a>
+    <script type="text/javascript">
+    //<!--
+      pagination_arrow('<!--prevpage--><%prevpage_url><!--/prevpage-->', 'NEW≫');
+    //-->
+    </script>
   </div>
-  <!--/prevpage-->
   <!--/not_permanent_area-->
 
   <!--permanent_area-->
-  <!--nextentry-->
   <div class="arrow">
-    <a href="<%nextentry_url>" title="<%nextentry_title>">≪OLD</a>
+    <script type="text/javascript">
+    //<!--
+      pagination_arrow(
+        '<!--nextentry--><%nextentry_url><!--/nextentry-->',
+        '≪OLD',
+        '<!--nextentry--><%nextentry_title><!--/nextentry-->'
+      );
+    //-->
+    </script>
   </div>
-  <!--/nextentry-->
   <div class="arrow">
     <a href="<%url>">HOME</a>
   </div>
-  <!--preventry-->
+
   <div class="arrow">
-    <a href="<%preventry_url>" title="<%preventry_title>">NEW≫</a>
+    <script type="text/javascript">
+    //<!--
+      pagination_arrow(
+        '<!--preventry--><%preventry_url><!--/preventry-->',
+        'NEW≫',
+        '<!--preventry--><%preventry_title><!--/preventry-->'
+      );
+    //-->
+    </script>
   </div>
-  <!--/preventry-->
+
   <!--/permanent_area-->
 
   </nav>
