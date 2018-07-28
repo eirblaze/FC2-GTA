@@ -131,6 +131,33 @@
     gtag('config', 'UA-122664308-1');
   </script>
 
+<!--
+  ▼ ヘッダーナビをスクロールに応じて操作 ▼
+  [参考1](http://black-flag.net/jquery/20100607-1138.html)
+  [参考2](https://gist.github.com/violetyk/5343883)
+  [参考3](https://qiita.com/kazTera/items/ab5dd9fb5b2579b25c4d)
+-->
+<script>
+  //<!--
+  $(function(){
+    var start_pos = 0;
+    var jQpagenav = $('#menu');
+
+    $(window).scroll(function(e){
+      var current_pos = $(this).scrollTop();
+      if (current_pos > start_pos) {
+        jQpagenav.addClass('sticky');
+      } else {
+        jQpagenav.removeClass('sticky');
+      }
+      start_pos = current_pos;
+    });
+
+  });
+  //-->
+</script>
+
+
 <!-- ▼ ページナビ ▼ -->
 <!--index_area-->
   <script type="text/javascript">
