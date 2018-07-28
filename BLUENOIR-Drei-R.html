@@ -124,14 +124,21 @@
 
 <!-- ▼ ページナビ ▼ -->
 <!--index_area-->
-  <script type="text/javascript"><!--
+  <script type="text/javascript">
+  //<!--
+
+  var prevpageurl = '<!--prevpage--><%prevpage_url><!--/prevpage-->';
+  var nextpageurl = '<!--nextpage--><%nextpage_url><!--/nextpage-->';
+  var total_pages = '<%total_pages>';
+
   function pagenavi(w)
   {
-    if ((n = '<%total_pages>') == '') return;
-    url = '<!--nextpage--><%nextpage_url><!--/nextpage-->';
+    var n = total_pages;
+    if ((n) == '') return;
+    url = nextpageurl;
     add = -1;
     if (url == '') {
-      url = '<!--prevpage--><%prevpage_url><!--/prevpage-->';
+      url = prevpageurl;
       add = 1;
     }
     ext = '.html';
@@ -190,9 +197,6 @@
     }
   }
 
-  prevpageurl = '<!--prevpage--><%prevpage_url><!--/prevpage-->';
-  nextpageurl = '<!--nextpage--><%nextpage_url><!--/nextpage-->';
-  n = '<%total_pages>';
   //--></script>
 <!--/index_area-->
 
