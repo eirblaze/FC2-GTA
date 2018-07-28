@@ -180,8 +180,6 @@ a:hover > img
    clear : both;
 }
 
-.
-
 
 /* レイアウト設定 --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -245,9 +243,8 @@ a:hover > img
 /* ▼ メニュー ▼ */
 
 #menu {
-   margin: 16px auto;
-   position: -webkit-sticky;
-   position: sticky;
+  margin: 16px auto;
+  position: -webkit-sticky;
   position: sticky;
   top: 37px;
   z-index: 10;
