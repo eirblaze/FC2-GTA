@@ -837,6 +837,14 @@ a:hover > img
   margin-bottom: 3px;
 }
 
+#content-nav .arrow:first-of-type {
+   margin-left: 0;
+}
+
+#content-nav .arrow:last-of-type {
+   margin-right: 0;
+}
+
 #content-nav .arrow a {
   display: block;
   padding: 1px 3px;
