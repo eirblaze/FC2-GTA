@@ -168,6 +168,26 @@
   //-->
 </script>
 
+<!-- ▼ シェアボタン ▼ -->
+<script type="text/javascript">
+</script>
+
+<!-- ▼ 続きを読む http://www.aiship.jp/knowhow/archives/22018 ▼ -->
+<script>
+    $(function() {
+      //最初は全てのパネルを非表示に
+      $('#entry_more<%topentry_no>').hide();
+      //選択したパネルをトグル表示
+      $('#toggle_more<%topentry_no>').click(function(e){
+          $('#entry_more<%topentry_no>', this).slideToggle(500);
+      });
+      //選択したパネルを閉じる
+      $('#close_more<%topentry_no>').click(function(e){
+          $('#entry_more<%topentry_no>', this).slideUp(500);
+      });
+    });
+</script>
+
 
 <!-- ▼ ページネーション生成 ▼ -->
 <!--not_permanent_area-->
@@ -410,11 +430,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!-- ▼　追記 ▼ -->
           <!--more_link-->
+          <!--yozoEntryIfExtended-->
           <div class="clearfix">
-          <div class="open-more"><a href="<%topentry_link>" target="_blank">● 別タブで記事を開く ●</a></div>
-          <div id="varP<%topentry_no>" class="read-more"><a href="<%topentry_link>#<%topentry_no>" onclick="showMore(<%topentry_no>,'<%topentry_link>#<%topentry_no>');return false;">▼ 続きを読む ▼</a></div>
+            <div class="open-more">
+              <a href="<%topentry_link>" target="_blank">● 別タブで記事を開く ●</a>
+            </div>
+            <div id="anchor_more<%topentry_no>" class="read-more">
+              <a id="toggle_more<%topentry_no>" href="#anchor_more<%topentry_no>">▼ 続きを読む ▼</a>
+            </div>
           </div>
-          <div id="varXYZ<%topentry_no>" style="display:none;padding-top: 15px;"><%topentry_more></div>
+          <div id="entry_more<%topentry_no>" class="more_box">
+            <%topentry_more>
+            <div class="read-more">
+              <a id="close_more<%topentry_no>" href="#anchor_more<%topentry_no>">▲ 続きを閉じる ▲</a>
+            </div>
+          </div>
+          <!--/yozoEntryIfExtended-->
           <!--/more_link-->
 
           <!--more-->
