@@ -554,38 +554,28 @@ a:hover > img
 
 .entry-body a:hover > img {border: 2px solid #95bfea;}
 
-.open-more a {
-   display: block;
-   float: left;
-   /* width: 339px; */
-   width: 40%;
-   color: silver;
-   font-size: 93%;
-   text-align: center;
-   text-decoration: none;
-   margin: 15px 16px 15px 0;
-   padding: 2px 0;
-   background: #222;
-   border: 1px solid #444;
-}
-
 .read-more a,
-.close-more a
-{
-   display: block;
-   /* width: 339px; */
-   width: 40%;
-   color: silver;
-   font-size: 93%;
-   text-align: center;
-   text-decoration: none;
-   margin: 15px 0;
-   padding: 2px 0;
-   background: #222;
-   border: 1px solid #444;
+.close-more a,
+.open-more a {
+  display: block;
+  /* width: 339px; */
+  width: 40%;
+  color: silver;
+  font-size: 93%;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 0;
+  padding: 2px 0;
+  background: #222;
+  border: 1px solid #444;
 }
 
 .read-more a {
+  margin-right: 16px;
+  float: left;
+}
+
+.open-more a {
   float: left;
 }
 
