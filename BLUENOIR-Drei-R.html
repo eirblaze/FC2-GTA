@@ -178,7 +178,7 @@
     $(more_id).slideToggle();
   }
   function closeMore(more_id){
-    more_id.slideUp();
+    $(more_id).slideUp();
   }
   //-->
 </script>
@@ -436,7 +436,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div id="entry_more<%topentry_no>" class="entry_more" style="display: none;">
             <%topentry_more>
             <div class="close-more">
-              <a id="close_more<%topentry_no>" onclick="closeMore($('#entry_more<%topentry_no>'));">▲ 続きを閉じる ▲</a>
+              <a id="close_more<%topentry_no>" onclick="closeMore('#entry_more<%topentry_no>');">▲ 続きを閉じる ▲</a>
             </div>
           </div>
           <!--/yozoEntryIfExtended-->

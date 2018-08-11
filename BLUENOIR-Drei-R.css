@@ -573,7 +573,6 @@ a:hover > img
 .close-more a
 {
    display: block;
-   float: left;
    /* width: 339px; */
    width: 40%;
    color: silver;
