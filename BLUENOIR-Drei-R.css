@@ -569,7 +569,9 @@ a:hover > img
    border: 1px solid #444;
 }
 
-.read-more a {
+.read-more a,
+.close-more a
+{
    display: block;
    float: left;
    /* width: 339px; */
@@ -584,12 +586,20 @@ a:hover > img
    border: 1px solid #444;
 }
 
+.read-more a {
+  float: left;
+}
+
 .read-more a:hover,
-.open-more a:hover {
+.open-more a:hover,
+.close-more a:hover
+{
    text-decoration: none;
    border: 1px solid #4e95dc;
    background: #000;
 }
+
+
 
 .entry-footer {
    text-align: right;
@@ -796,7 +806,7 @@ a:hover > img
 
 /* ▼ トラックバック ▼ */
 .tb-url input {
-   width: 100%;   
+   width: 100%;
 }
 
 /* ▼ ページネーション ▼ */

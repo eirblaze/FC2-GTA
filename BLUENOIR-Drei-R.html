@@ -105,14 +105,9 @@
   -->
 
   <script
-  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-
-  <!-- script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script -->
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -172,22 +167,21 @@
 <script type="text/javascript">
 </script>
 
-<!-- ▼ 続きを読む http://www.aiship.jp/knowhow/archives/22018 ▼ -->
-<script>
-    $(function() {
-      //最初は全てのパネルを非表示に
-      $('#entry_more<%topentry_no>').hide();
-      //選択したパネルをトグル表示
-      $('#toggle_more<%topentry_no>').click(function(e){
-          $('#entry_more<%topentry_no>', this).slideToggle(500);
-      });
-      //選択したパネルを閉じる
-      $('#close_more<%topentry_no>').click(function(e){
-          $('#entry_more<%topentry_no>', this).slideUp(500);
-      });
-    });
-</script>
+<!-- ▼ 続きを読む▼
+  http://www.aiship.jp/knowhow/archives/22018
+  http://christina04.blog.fc2.com/blog-entry-16.html
+-->
+<script type="text/javascript">
+  //<!-- onclick="showMore(<%topentry_no>,'<%topentry_link>#<%topentry_no>');return false;
 
+  function showMore(more_id){
+    $(more_id).slideToggle();
+  }
+  function closeMore(more_id){
+    more_id.slideUp();
+  }
+  //-->
+</script>
 
 <!-- ▼ ページネーション生成 ▼ -->
 <!--not_permanent_area-->
@@ -436,13 +430,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="<%topentry_link>" target="_blank">● 別タブで記事を開く ●</a>
             </div>
             <div id="anchor_more<%topentry_no>" class="read-more">
-              <a id="toggle_more<%topentry_no>" href="#anchor_more<%topentry_no>">▼ 続きを読む ▼</a>
+              <a id="toggle_more<%topentry_no>" onclick="showMore('#entry_more<%topentry_no>');">▼ 続きを読む ▼</a>
             </div>
           </div>
-          <div id="entry_more<%topentry_no>" class="more_box">
+          <div id="entry_more<%topentry_no>" class="entry_more" style="display: none;">
             <%topentry_more>
-            <div class="read-more">
-              <a id="close_more<%topentry_no>" href="#anchor_more<%topentry_no>">▲ 続きを閉じる ▲</a>
+            <div class="close-more">
+              <a id="close_more<%topentry_no>" onclick="closeMore($('#entry_more<%topentry_no>'));">▲ 続きを閉じる ▲</a>
             </div>
           </div>
           <!--/yozoEntryIfExtended-->
