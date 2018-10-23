@@ -279,7 +279,7 @@
     if (w < 0) w = 0;
     ww = 2 * w + 1;
     for (i = n; i > 0; i--) {
-      dot = '<li><a href=\"' + base + (i - 1) + ext + '\" title=\"' + i + '\">...</a></li>'
+      dot = '<li><a href=\"' + base + (i - 1) + ext + '\" title=\"' + i + '\">...<\/a><\/li>'
       if (
         (c - w <= i && i <= c + w)
         || i == 1
@@ -288,9 +288,9 @@
         || (i == n - 1 && c + w + 1 == i)
       ) {
          if (i == c) {
-           write += '<li><b>' + i + '</b></li>';
+           write += '<li><b>' + i + '<\/b><\/li>';
          } else {
-          write += '<li><a href=\"' + base + (i - 1) + ext + '\">' + i + '</a></li>';
+          write += '<li><a href=\"' + base + (i - 1) + ext + '\">' + i + '<\/a><\/li>';
          }
       } else if (i < c - w) {
         if (i - 1 <= (c - w - 2) % ww) {
@@ -310,7 +310,7 @@
         }
       }
     }
-    write += '</ul>';
+    write += '<\/ul>';
     document.write(write);
   }
   //--></script>
@@ -318,9 +318,9 @@
 <script>//<!--
   function pagination_arrow(url, text, title = '') {
     if (url == '') {
-      document.write('<b>' + text + '</b>');
+      document.write('<b>' + text + '<\/b>');
     } else {
-      document.write('<a href=\"' + url + '\" title=\"' + title + '\">' + text + '</a>');
+      document.write('<a href=\"' + url + '\" title=\"' + title + '\">' + text + '<\/a>');
     }
   }
 //--></script>
