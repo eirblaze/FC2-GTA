@@ -480,7 +480,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 onclick="$('#entry_more<%topentry_no>').slideToggle();">▼ 続きを読む ▼</a>
             </div>
             <div class="open-more">
-              <a href="<%topentry_link>" target="_blank">● 別タブで記事を開く ●</a>
+              <a href="<%topentry_link>" target="_blank" title="link-<%topentry_no>">● 別タブで記事を開く ●</a>
             </div>
           </div>
           <div id="entry_more<%topentry_no>" class="entry_more" style="display: none;">
@@ -543,7 +543,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!--allow_comment-->
           ｜
-          <a href="<%topentry_link>#comments">Comments (<%topentry_comment_num>)</a>
+          <a href="<%topentry_link>#comments" title="comment<%topentry_no>">Comments (<%topentry_comment_num>)</a>
           <!--/allow_comment-->
 
           <!--allow_tb-->
