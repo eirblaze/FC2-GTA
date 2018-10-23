@@ -1,6 +1,11 @@
 @charset "utf-8";
 /*!
-■ テンプレートについて ■
+Theme Name: BLUENOIR-Drei-R
+Theme URI: http://subculsheets.blog.fc2.com/
+Author: HiRo
+Author URI: http://subculsheets.blog.fc2.com/
+Tags: blog
+Description:■ テンプレートについて ■
 
 ダウンロードありがとうございます！ デザイン作者の "HiRo" です。
 テンプレートについて簡単なご説明を書いておきますが、このメッセージは邪魔だったら消して下さい。
@@ -17,4 +22,6 @@
 　　　　　【サブカルシート】 by HiRo 「http://subculsheets.blog.fc2.com/」
 */
 
+@import "BLUENOIR-Drei-R/palette";
+@import "BLUENOIR-Drei-R/reset";
 @import "BLUENOIR-Drei-R/base";
