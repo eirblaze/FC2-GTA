@@ -245,10 +245,9 @@ a:hover > img
 #menu {
   margin: 16px auto;
   z-index: 10;
-
   position: -webkit-sticky;
   position: sticky;
-  top: 37px;
+  top: 0;
 }
 
 #menu ul {
