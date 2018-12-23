@@ -1,8 +1,9 @@
 /**
  * Rawgit終了にあたり、とりいそぎjsDelivrでアセットを配信する
  * @see https://qiita.com/pokkur/items/40ded290fc5122bfe238
+ * @see https://www.jsdelivr.com/?docs=gh
  *
- * @cdn https://cdn.jsdelivr.net/gh/eirblaze/FC2-GTA@latest/html/dist/script.min.js
+ * @cdn https://cdn.jsdelivr.net/gh/eirblaze/FC2-GTA@release/html/dist/script.min.js
  */
 
 /**
