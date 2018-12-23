@@ -40,7 +40,7 @@ $(function(){
 
 
 /**
- * シェアボタン
+ * シェアボタン (Web Share API )
  */
 // DOM書き換え
 $(document).ready(function(){
