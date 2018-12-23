@@ -52,22 +52,23 @@
    background: #000;
    filter: Alpha(opacity=70);
    opacity:0.7;
-}
-
-#header h1 {
-   font-size: 250%;
-   font-weight: bold;
-}
-
-#header a {
-   display: block;
-   color: #fff;
-   padding: 3px 10px;
-}
-
-#header a:hover {
-  /* color: #4e95dc; */
-  background-color: #192744;
+   h1 {
+     font-size: 250%;
+     font-weight: bold;
+   }
+   a {
+      display: block;
+      color: #fff;
+      padding: 3px 10px;
+      &:hover {
+        /* color: #4e95dc; */
+        background-color: #192744;
+      }
+   }
+   p {
+      font-size: 108%;
+      margin-left: 5px;
+   }
 }
 
 /*
@@ -82,10 +83,6 @@
 }
 */
 
-#header p {
-   font-size: 108%;
-   margin-left: 5px;
-}
 
 /* ▼ メニュー ▼ */
 
@@ -95,95 +92,77 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  ul {
+     /*! padding: 3px 2px 3px 3px; */
+     background: #111;
+     border-top: 1px solid #333;
+     border-bottom: 1px solid #333;
+     border-left: 1px solid #333;
+     li {
+        position: relative;
+        float: left;
+        width: 16.6666%;
+        text-align: center;
+        /*! border-right: 1px solid #444; */
+        &#last {
+          width: 16.667%;
+          /*
+          a {
+            border-right: none;
+          }
+          */
+        }
+        a {
+          display: block;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: silver;
+          border-right: 1px solid #444;
+          white-space: nowrap;
+          &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 0;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            display: block;
+          }
+          &:hover {
+            color: #fff;
+            font-weight: bold;
+            background-color: #192744;
+          }
+          &:hover:after {
+            width: 100%;
+            border-bottom: 3px solid #4e95dc;
+          }
+          .linkname.en {
+            display: inline-block;
+            text-indent: 0;
+            @media screen and (max-width: 600px ) {
+              display: none;
+            }
+          }
+          .linkname.jp {
+            display: inline-block;
+            text-indent: -9999px;
+            @media screen and (max-width: 600px ) {
+              display: none;
+            }
+          }
+          &:hover > .linkname.en {
+            text-indent: -9999px;
+          }
+          &:hover > .linkname.jp {
+            text-indent: 0;
+          }
+        }
+     }
+  }
 }
 
-#menu ul {
-   /*! padding: 3px 2px 3px 3px; */
-   background: #111;
-   border-top: 1px solid #333;
-   border-bottom: 1px solid #333;
-   border-left: 1px solid #333;
-}
-
-#menu li {
-   position: relative;
-   float: left;
-   width: 16.6666%;
-   text-align: center;
-/*
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-*/
-
-   /*! border-right: 1px solid #444; */
-}
-
-#menu li#last {
-  width: 16.667%;
-}
-
-#menu li a {
-   display: block;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   color: silver;
-   border-right: 1px solid #444;
-   white-space: nowrap;
-}
-
-/*
-#menu li#last a {
-  border-right: none;
-}
-*/
-
-#menu li a:hover {
-   color: #fff;
-   font-weight: bold;
-   background-color: #192744;
-}
-
-#menu li a:after {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-	content: '';
-	width: 0;
-	transition: all 0.3s ease;
-	border-bottom: 3px solid transparent;
-	display: block;
-}
-
-#menu li a:hover:after {
-	width: 100%;
-	border-bottom: 3px solid #4e95dc;
-}
-
-#menu li a .linkname.en {
-  display: inline-block;
-  text-indent: 0;
-}
-
-#menu li a .linkname.jp {
-  display: inline-block;
-  text-indent: -9999px;
-}
-
-#menu li a:hover > .linkname.en {
-  text-indent: -9999px;
-}
-
-#menu li a:hover > .linkname.jp {
-  text-indent: 0;
-}
-
-@media screen and (max-width: 600px ) {
-  #menu li a .linkname.en,
-  #menu li a .linkname.jp {
-   display: none;
- }
-}
 
 /* ▼ レイアウト ▼ */
 
