@@ -14,8 +14,8 @@
     "autoprefixer-r": "postcss --use autoprefixer --no-map -o html/css/BLUENOIR-Drei-R.css html/css/BLUENOIR-Drei-R.css",
     "nodemon-sass": "nodemon -e scss -x \"yarn build-css \"",
     "nodemon-autoprefixer": "nodemon -e scss -x \"yarn autoprefixer \"",
-    "js-r": "uglifyjs html/js/script.js -o html/js/script.min.js -c -m",
-    "js-t": "uglifyjs html/js/script.js",
+    "js-r": "uglifyjs html/src/js/script.js -o html/dist/script.min.js -c -m",
+    "js-t": "uglifyjs html/src/js/script.js",
     "test2": "yarn --version",
     "test": "node-sass --version"
   },

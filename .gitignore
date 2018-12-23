@@ -1,6 +1,5 @@
 # sassコンパイル先を除外
 html/css/BLUENOIR-Drei-R.css
-#html/js/*.min.js
 
 # Created by https://www.gitignore.io/api/node,sass,windows
 
