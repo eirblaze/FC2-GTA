@@ -58,27 +58,36 @@ export default function pagenavi(i_w, i_total_pages_str, i_nextpage_url, i_prevp
      || (page_count == 2 && page_current_num - i_w - 1 == page_count) || (page_count == total_pages - 1 && page_count + i_w + 1 == page_count)
     ) {
       if (page_count == page_count) {
-        document.write(` <b>${page_count}</b> `)
+        document_push(` <b>${page_count}</b> `)
       } else {
-        document.write(` <a href="${base}${(page_count - 1)}${ext}">${page_count}</a> `)
+        document_push(` <a href="${base}${(page_count - 1)}${ext}">${page_count}</a> `)
       }
     } else if (page_count < page_count - i_w) {
       if (page_count - 1 <= (page_count - i_w - 2) % ww) {
         if (page_count - 1 == Math.floor(((page_count - i_w - 2) % ww + 1) / 2)) {
-          document.write(dot)
+          document_push(dot)
         }
       } else if ((page_count - page_count) % ww == 0) {
-        document.write(dot)
+        document_push(dot)
       }
     } else if (page_count > page_count + i_w) {
       if (total_pages - page_count <= (total_pages - page_count + i_w) % ww) {
         if (total_pages - page_count == Math.floor(((total_pages - page_count + i_w) % ww + 1) / 2)) {
-          document.write(dot)
+          document_push(dot)
         }
       } else if ((page_count - page_count) % ww == 0) {
-        document.write(dot)
+        document_push(dot)
       }
     }
   }
+  document_write()
 }
 
+let document = ""
+function document_push(str) {
+  document = `${document}${str}`
+}
+
+function document_write() {
+  $('.paginav_num').html(document)
+}

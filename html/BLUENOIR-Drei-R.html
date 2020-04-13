@@ -255,8 +255,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <span class="linkname en">MOD DL</span><span class="linkname jp">MOD置き場</span></a></li>
     <li><a href="<%url>?xml" target="_blank"><i class="fas fa-rss-square"></i>
      <span class="linkname en">RSS</span><span class="linkname jp">フィード</span></a></li>
-    <li id="menu-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="<%blog_name>" data-hatena-bookmark-layout="simple"><object type="image/svg+xml" data="https://blog-imgs-119.fc2.com/e/i/r/eirblaze/hatenabookmark-logomark.xml" width="13" height="13">このエントリーをはてなブックマークに追加</object>
-     <span class="linkname en">Bookmark</span><span class="linkname jp">はてブ</span></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script></li>
+    <li id="menu-share-button">
+     <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="<%blog_name>" data-hatena-bookmark-layout="simple"><object type="image/svg+xml" data="https://blog-imgs-119.fc2.com/e/i/r/eirblaze/hatenabookmark-logomark.xml" width="13" height="13">このエントリーをはてなブックマークに追加</object>
+     <span class="linkname en">Bookmark</span><span class="linkname jp">はてブ</span></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script>
+    </li>
     <li><a href="<%url>archives.html"><i class="fas fa-book"></i>
      <span class="linkname en">ALL Entry</span><span class="linkname jp">全記事</span></a></li>
     <li id="last"><a href="<%server_url>control.php" target="_blank"><i class="fas fa-key"></i>
@@ -507,7 +509,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav id="content-nav">
 
   <!--not_permanent_area-->
-  <div class="arrow">
+  <div class="arrow nav_old_page">
     <script>
     //<!--
       pagination_arrow('<!--nextpage--><%nextpage_url><!--/nextpage-->', '≪OLD');
@@ -515,13 +517,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
   </div>
   <!--not_permanent_area-->
-  <script>
+  <div class="paginav_num"></div>
   //<!--
     pagenavi(3, '<%total_pages>', '<!--nextpage--><%nextpage_url><!--/nextpage-->', '<!--prevpage--><%prevpage_url><!--/prevpage-->');
   //-->
   </script>
   <!--/not_permanent_area-->
-  <div class="arrow">
+  <div class="arrow nav_new_page">
     <script>
     //<!--
       pagination_arrow('<!--prevpage--><%prevpage_url><!--/prevpage-->', 'NEW≫');
