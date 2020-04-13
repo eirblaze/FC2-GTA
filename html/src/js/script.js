@@ -22,7 +22,9 @@ import "../_sass/BLUENOIR-Drei-R.scss"
 
 
 // eslint-disable-next-line no-unused-vars
-_pagenavi(3, total_pages, nextpage_url, prev_page_url)
+$(document).ready(() => {
+  _pagenavi(3, total_pages, nextpage_url, prev_page_url)
+})
 
 // eslint-disable-next-line no-unused-vars
 // _pagination_arrow(url,text,title)
