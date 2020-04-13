@@ -174,6 +174,102 @@
     gtag('config', 'UA-122664308-1');
   </script>
 
+<!-- ▼ ページネーション生成 ▼ -->
+<!--not_permanent_area-->
+  <script>
+  //<!--
+
+  var prevpageurl = '<!--prevpage--><%prevpage_url><!--/prevpage-->';
+  var nextpageurl = '<!--nextpage--><%nextpage_url><!--/nextpage-->';
+  var total_pages = '<%total_pages>';
+
+  function pagenavi(w)
+  {
+    var n = total_pages;
+    if ((n) == '') return;
+
+    var write = '<ul class="pagination">';
+    url = nextpageurl;
+    add = -1;
+    if (url == '') {
+      url = prevpageurl;
+      add = 1;
+    }
+    ext = '.html';
+    if ((i = url.indexOf('/page-')) != -1) {
+      c = url.substring(i + 6, url.length - 5);
+      base = url.substring(0, i + 6);
+    } else if (
+     url.indexOf('/category') != -1
+     || url.indexOf('/blog-date-') != -1) {
+      i = url.lastIndexOf('-');
+      c = url.substring(i + 1, url.length - 5);
+      base = url.substring(0, i + 1);
+    } else if ((i = url.indexOf('page=')) != -1) {
+      c = url.substring(i + 5);
+      base = url.substring(0, i + 5);
+      ext = '';
+    } else {
+      c = 0;
+      add = 0;
+      base = '';
+      ext = '';
+    }
+    n = Number(n);
+    if (n < 1) n = 1;
+    c = Number(c) + add + 1;
+    if (c < 1) c = 1;
+    if (c > n) c = n;
+    if (w < 0) w = 0;
+    ww = 2 * w + 1;
+    for (i = n; i > 0; i--) {
+      dot = '<li><a href=\"' + base + (i - 1) + ext + '\" title=\"' + i + '\">...<\/a><\/li>'
+      if (
+        (c - w <= i && i <= c + w)
+        || i == 1
+        || i == n
+        || (i == 2 && c - w - 1 == i)
+        || (i == n - 1 && c + w + 1 == i)
+      ) {
+         if (i == c) {
+           write += '<li><b>' + i + '<\/b><\/li>';
+         } else {
+          write += '<li><a href=\"' + base + (i - 1) + ext + '\">' + i + '<\/a><\/li>';
+         }
+      } else if (i < c - w) {
+        if (i - 1 <= (c - w - 2) % ww) {
+          if (i - 1 == Math.floor(((c - w - 2) % ww + 1) / 2)) {
+            write += dot;
+          }
+        } else if ((c - i) % ww == 0) {
+          write += dot;
+        }
+      } else if (i > c + w) {
+        if (n - i <= (n - c + w) % ww) {
+          if (n - i == Math.floor(((n - c + w) % ww + 1) / 2)) {
+            write += dot;
+          }
+        } else if ((i - c) % ww == 0) {
+          write += dot;
+        }
+      }
+    }
+    write += '<\/ul>';
+    document.write(write);
+  }
+  //--></script>
+<!--/not_permanent_area-->
+<script>//<!--
+  function pagination_arrow(url, text, title = '') {
+    if (url == '') {
+      document.write('<b>' + text + '<\/b>');
+    } else {
+      document.write('<a href=\"' + url + '\" title=\"' + title + '\">' + text + '<\/a>');
+    }
+  }
+//--></script>
+
+
   <!--prevpage--><link rel="prev" href="<%prevpage_url>" title="<%template_prevpage>"><!--/prevpage-->
   <!--nextpage--><link rel="next" href="<%nextpage_url>" title="<%template_nextpage>"><!--/nextpage-->
   <!--preventry--><link rel="next" href="<%preventry_url>" title="<%preventry_title>"><!--/preventry-->
@@ -519,7 +615,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!--not_permanent_area-->
   <div class="paginav_num"></div>
   //<!--
-    pagenavi(3, '<%total_pages>', '<!--nextpage--><%nextpage_url><!--/nextpage-->', '<!--prevpage--><%prevpage_url><!--/prevpage-->');
+    pagenavi(3);
   //-->
   </script>
   <!--/not_permanent_area-->

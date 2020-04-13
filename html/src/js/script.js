@@ -1,7 +1,7 @@
 /* eslint-disable object-shorthand */
 /* eslint-disable no-undef */
-import _pagenavi from "./pagenavi"
-import _pagination_arrow from "./pagination_arrow"
+// import _pagenavi from "./pagenavi"
+// import _pagination_arrow from "./pagination_arrow"
 
 import "../_sass/BLUENOIR-Drei-R.scss"
 
@@ -21,15 +21,15 @@ import "../_sass/BLUENOIR-Drei-R.scss"
  */
 
 
-// eslint-disable-next-line no-unused-vars
-function pagenavi(w, total_pages_str, nextpage_url) {
-  _pagenavi(...args)
-}
+// // eslint-disable-next-line no-unused-vars
+// function pagenavi(w, total_pages_str, nextpage_url) {
+//   _pagenavi(...args)
+// }
 
-// eslint-disable-next-line no-unused-vars
-function pagination_arrow(url,text,title) {
-  _pagination_arrow(...args)
-}
+// // eslint-disable-next-line no-unused-vars
+// function pagination_arrow(url,text,title) {
+//   _pagination_arrow(...args)
+// }
 
  /*
 $(function(){
