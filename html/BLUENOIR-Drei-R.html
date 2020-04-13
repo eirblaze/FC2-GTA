@@ -153,6 +153,16 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script>
+    var total_pages = '';
+    var nextpage_url = '';
+    var prev_page_url = '';
+    // <!--not_permanent_area-->
+    total_pages = '<%total_pages>';
+    nextpage_url = '<!--nextpage--><%nextpage_url><!--/nextpage-->';
+    prev_page_url = '<!--prevpage--><%prevpage_url><!--/prevpage-->';
+    // <!--/not_permanent_area-->
+  </script>
   <script
   src="https://cdn.jsdelivr.net/gh/eirblaze/FC2-GTA@release/html/dist/script.min.js"
   ></script>
@@ -175,90 +185,6 @@
   </script>
 
 <!-- ▼ ページネーション生成 ▼ -->
-<!--not_permanent_area-->
-  <script>
-  //<!--
-
-  var prevpageurl = '<!--prevpage--><%prevpage_url><!--/prevpage-->';
-  var nextpageurl = '<!--nextpage--><%nextpage_url><!--/nextpage-->';
-  var total_pages = '<%total_pages>';
-
-  function pagenavi(w)
-  {
-    var n = total_pages;
-    if ((n) == '') return;
-
-    var write = '<ul class="pagination">';
-    url = nextpageurl;
-    add = -1;
-    if (url == '') {
-      url = prevpageurl;
-      add = 1;
-    }
-    ext = '.html';
-    if ((i = url.indexOf('/page-')) != -1) {
-      c = url.substring(i + 6, url.length - 5);
-      base = url.substring(0, i + 6);
-    } else if (
-     url.indexOf('/category') != -1
-     || url.indexOf('/blog-date-') != -1) {
-      i = url.lastIndexOf('-');
-      c = url.substring(i + 1, url.length - 5);
-      base = url.substring(0, i + 1);
-    } else if ((i = url.indexOf('page=')) != -1) {
-      c = url.substring(i + 5);
-      base = url.substring(0, i + 5);
-      ext = '';
-    } else {
-      c = 0;
-      add = 0;
-      base = '';
-      ext = '';
-    }
-    n = Number(n);
-    if (n < 1) n = 1;
-    c = Number(c) + add + 1;
-    if (c < 1) c = 1;
-    if (c > n) c = n;
-    if (w < 0) w = 0;
-    ww = 2 * w + 1;
-    for (i = n; i > 0; i--) {
-      dot = '<li><a href=\"' + base + (i - 1) + ext + '\" title=\"' + i + '\">...<\/a><\/li>'
-      if (
-        (c - w <= i && i <= c + w)
-        || i == 1
-        || i == n
-        || (i == 2 && c - w - 1 == i)
-        || (i == n - 1 && c + w + 1 == i)
-      ) {
-         if (i == c) {
-           write += '<li><b>' + i + '<\/b><\/li>';
-         } else {
-          write += '<li><a href=\"' + base + (i - 1) + ext + '\">' + i + '<\/a><\/li>';
-         }
-      } else if (i < c - w) {
-        if (i - 1 <= (c - w - 2) % ww) {
-          if (i - 1 == Math.floor(((c - w - 2) % ww + 1) / 2)) {
-            write += dot;
-          }
-        } else if ((c - i) % ww == 0) {
-          write += dot;
-        }
-      } else if (i > c + w) {
-        if (n - i <= (n - c + w) % ww) {
-          if (n - i == Math.floor(((n - c + w) % ww + 1) / 2)) {
-            write += dot;
-          }
-        } else if ((i - c) % ww == 0) {
-          write += dot;
-        }
-      }
-    }
-    write += '<\/ul>';
-    document.write(write);
-  }
-  //--></script>
-<!--/not_permanent_area-->
 <script>//<!--
   function pagination_arrow(url, text, title = '') {
     if (url == '') {
@@ -605,15 +531,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav id="content-nav">
 
   <!--not_permanent_area-->
-  <div class="arrow nav_old_page">
+  <div class="arrow paginav_old_page">
     <script>
       pagination_arrow('<!--nextpage--><%nextpage_url><!--/nextpage-->', '≪OLD');
     </script>
   </div>
-  <script>
-    pagenavi(3);
-  </script>
-  <div class="arrow nav_new_page">
+  <!--not_permanent_area-->
+  <div class="paginav_num"></div>
+  <!--/not_permanent_area-->
+  <div class="arrow paginav_new_page">
     <script>
       pagination_arrow('<!--prevpage--><%prevpage_url><!--/prevpage-->', 'NEW≫');
     </script>

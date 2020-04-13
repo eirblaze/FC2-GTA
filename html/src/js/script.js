@@ -21,15 +21,11 @@ import "../_sass/BLUENOIR-Drei-R.scss"
  */
 
 
-// // eslint-disable-next-line no-unused-vars
-// function pagenavi(w, total_pages_str, nextpage_url) {
-//   _pagenavi(...args)
-// }
+// eslint-disable-next-line no-unused-vars
+_pagenavi(3, total_pages, nextpage_url, prev_page_url)
 
-// // eslint-disable-next-line no-unused-vars
-// function pagination_arrow(url,text,title) {
-//   _pagination_arrow(...args)
-// }
+// eslint-disable-next-line no-unused-vars
+// _pagination_arrow(url,text,title)
 
  /*
 $(function(){
