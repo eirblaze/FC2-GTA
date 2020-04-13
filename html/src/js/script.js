@@ -1,3 +1,5 @@
+import "../_sass/BLUENOIR-Drei-R.scss"
+
 /**
  * Rawgit終了にあたり、とりいそぎjsDelivrでアセットを配信する
  * @see https://qiita.com/pokkur/items/40ded290fc5122bfe238
