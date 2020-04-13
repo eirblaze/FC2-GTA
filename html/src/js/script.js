@@ -1,5 +1,8 @@
 /* eslint-disable object-shorthand */
 /* eslint-disable no-undef */
+import _pagenavi from "./pagenavi"
+import _pagination_arrow from "./pagination_arrow"
+
 import "../_sass/BLUENOIR-Drei-R.scss"
 
 /**
@@ -16,7 +19,19 @@ import "../_sass/BLUENOIR-Drei-R.scss"
  * @see https://gist.github.com/violetyk/5343883
  * @see https://qiita.com/kazTera/items/ab5dd9fb5b2579b25c4d
  */
-/*
+
+
+// eslint-disable-next-line no-unused-vars
+function pagenavi(w, total_pages_str, nextpage_url) {
+  _pagenavi(...args)
+}
+
+// eslint-disable-next-line no-unused-vars
+function pagination_arrow(url,text,title) {
+  _pagination_arrow(...args)
+}
+
+ /*
 $(function(){
   var start_pos = 0;
 

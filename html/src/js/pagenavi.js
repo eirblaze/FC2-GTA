@@ -4,17 +4,21 @@
  * /blog-date-200807-1.html
  * /?tag=%A5%D1%A5%F3%A5%C0&page=1
  * /?q=%A5%D1%A5%F3%A5%C0&page=1
+ *
+ * const total_pages_str = '<%total_pages>'
+ * const nextpage_url = '<!--nextpage--><%nextpage_url><!--/nextpage-->'
+ * const prevpage_url = '<!--prevpage--><%prevpage_url><!--/prevpage-->'
  */
 // eslint-disable-next-line no-unused-vars
-function pagenavi(i_w)
+export default function pagenavi(i_w, i_total_pages_str, i_nextpage_url, i_prevpage_url)
 {
-  const total_pages_str = '<%total_pages>'
+  const total_pages_str = i_total_pages_str
   if (total_pages_str == '') return
 
-  let url = '<!--nextpage--><%nextpage_url><!--/nextpage-->'
+  let url = i_nextpage_url
   let add = -1
   if (url == '') {
-    url = '<!--prevpage--><%prevpage_url><!--/prevpage-->'
+    url = i_prevpage_url
     add = 1
   }
   let ext = '.html'
@@ -77,3 +81,4 @@ function pagenavi(i_w)
     }
   }
 }
+
