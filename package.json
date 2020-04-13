@@ -35,7 +35,7 @@
     "test": "jest",
     "test-w": "jest --watch",
     "coverage": "jest --coverage",
-    "lint": "eslint ./**/*.ts ./**/*.js ./**/*.mjs"
+    "lint": "eslint ./**/*.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

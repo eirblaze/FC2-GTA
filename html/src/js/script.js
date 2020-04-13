@@ -1,3 +1,5 @@
+/* eslint-disable object-shorthand */
+/* eslint-disable no-undef */
 import "../_sass/BLUENOIR-Drei-R.scss"
 
 /**
@@ -45,7 +47,7 @@ $(function(){
  * シェアボタン (Web Share API )
  */
 // DOM書き換え
-$(document).ready(function(){
+$(document).ready(() => {
 
   if (navigator.share) {
     /*
@@ -57,18 +59,19 @@ $(document).ready(function(){
 <i class="fas fa-share-square"></i>\
 <span class="linkname en">Share</span><span class="linkname jp">共有する</span>\
 </a>\
-    ');
+    ')
   }
 
-});
+})
 
 // 本体
+// eslint-disable-next-line no-unused-vars
 function shareAPI() {
   if (navigator.share) {
-    var url = document.location.href;
-    var canonicalElement = document.querySelector('link[rel=canonical]');
+    let url = document.location.href
+    const canonicalElement = document.querySelector('link[rel=canonical]')
     if (canonicalElement !== null) {
-      url = canonicalElement.href;
+      url = canonicalElement.href
     }
     navigator.share({
       title: share_title,
