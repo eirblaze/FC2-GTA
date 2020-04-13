@@ -1,6 +1,6 @@
 /* eslint-disable object-shorthand */
 /* eslint-disable no-undef */
-// import _pagenavi from "./pagenavi"
+import _pagenavi from "./pagenavi"
 // import _pagination_arrow from "./pagination_arrow"
 
 import "../_sass/BLUENOIR-Drei-R.scss"

@@ -9,7 +9,6 @@
  * const nextpage_url = '<!--nextpage--><%nextpage_url><!--/nextpage-->'
  * const prevpage_url = '<!--prevpage--><%prevpage_url><!--/prevpage-->'
  */
-// eslint-disable-next-line no-unused-vars
 export default function pagenavi(i_w, i_total_pages_str, i_nextpage_url, i_prevpage_url)
 {
   const total_pages_str = i_total_pages_str
@@ -80,14 +79,9 @@ export default function pagenavi(i_w, i_total_pages_str, i_nextpage_url, i_prevp
       }
     }
   }
-  document_write()
 }
 
-let document = ""
-function document_push(str) {
-  document = `${document}${str}`
+function document_push(html) {
+  $('.paginav_num').append(html)
 }
 
-function document_write() {
-  $('.paginav_num').html(document)
-}
